@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 기존 소스...로 추정됩니다 서버에 연결하면 지워주세요 -->
+        <link rel="stylesheet" href="/public/css/mall-m.css">
+        <!-- D라이브러리 신규 작업 영역 (필수) -->
+        <script src="/public/js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="/public/css/style-m.css">
+        <link rel="stylesheet" href="/public/css/swiper.min.css">
+        <script src="/public/js/script-m.js"></script>
+        <script src="/public/js/swiper.min.js"></script>
+        <!-- //D라이브러리 신규 작업 영역 (필수) -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- D라이브러리 신규 작업 영역 -->
+            <!-- 과동 sci / 수동 math / 어과동 kids / 어수동 kids-math 클래스 추가 -->
+            <div class="sub-page emgz emgz-tab sci">
+                <div class="com-tab rectangle mlr-16">
+                    <div class="tab-list">
+                        <button>최신 호 보기</button>
+                        <button class="selected">과학동아</button>
+                        <button>수학동아</button>
+                        <button>어린이과학동아</button>
+                        <button>어린이수학동아</button>
+                    </div>
+                </div>
+                <div class="tab-cont">
+                    <div class="sel-mgz">
+                        <div id="yearSelectArea">
+                            <select id="year" name="year">
+                                <option value="2024" selected="">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                            </select>
+                        </div>
+                        <div id="monthSelectArea">
+                            <select id="month" name="month">
+                                <option value="12">12</option>
+                                <option value="11">11</option>
+                                <option value="10">10</option>
+                                <option value="09">09</option>
+                                <option value="08">08</option>
+                                <option value="07">07</option>
+                                <option value="06">06</option>
+                                <option value="05">05</option>
+                                <option value="04">04</option>
+                                <option value="03">03</option>
+                                <option value="02">02</option>
+                                <option value="01">01</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input class="view-btn" name="issue_choice" type="button" value="보기" style="cursor:pointer">
+                        </div>
+                    </div>
+                    <div class="cont-area">
+                        <div class="main-thumb mlr-16">
+                            <a href="javascript:;">
+                                <img src="/public/images/dummy/ebook.png" alt="과학동아 2023년07호.">
+                            </a>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="sub-cont">
+                            <div class="mtitle mlr-16">
+                                <h2>
+                                    <img src="/public/images/common/tle_logo_sci.png" alt="과학동아" style=" vertical-align:middle">
+                                </h2>
+                                <span class="vol verdana">vol <strong class="verdana">457</strong></span>
+                                <span class="date">2024. 01</span>
+                                <span class="original">
+                                    <a href="javascript:;"><strong>대여하기</strong></a>
+                                </span>
+                            </div>
+                            <div class="view-mgz">
+                                <!-- 특집 -->
+                                <div class="view-special">
+                                    <div class="top mlr-16">
+                                        <h3>특집</h3>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src='/public/images/@banner.jpg' alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>[특집] 도파민 중독 시대... 모든 길은 소셜 미디어로 통한다</h4>
+                                                </dd>
+                                                <dd> 습관적으로 휴대전화에 손을 뻗어 소셜 미디어에 접속한다. 침대에 누워서 인스타그램 피드를 확인하고, 밥을 먹으면서 유튜브를 본다. 정신없이 틱톡을 20개쯤 넘기면 어느새 내려야 하는 정류장이 보인다. 새로 업로드된 소식만 확인하겠다고 생각했더라도 ‘하나만 더 보자’는 속삭임이 뇌 속을 울린...</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-container">
+                                        <ul class="swiper-wrapper other-news">
+                                            <li class="swiper-slide">
+                                                <a href="javascript:;">
+                                                    <dl>
+                                                        <dt>
+                                                            <img src="/public/images/@event0.jpg"alt="">
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="news-flag">과학뉴스</p>
+                                                            <span>Intro 당신은 도파민 중독인가요?</span>
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:;">
+                                                    <dl>
+                                                        <dt>
+                                                            <img src="/public/images/@event0.jpg"alt="">
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="news-flag">과학뉴스</p>
+                                                            <span>Intro 당신은 도파민 중독인가요?</span>
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:;">
+                                                    <dl>
+                                                        <dt>
+                                                            <img src="/public/images/@event0.jpg"alt="">
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="news-flag">과학뉴스</p>
+                                                            <span>Intro 당신은 도파민 중독인가요?</span>
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:;">
+                                                    <dl>
+                                                        <dt>
+                                                            <img src="/public/images/@event0.jpg"alt="">
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="news-flag">과학뉴스</p>
+                                                            <span>Intro 당신은 도파민 중독인가요?</span>
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 기획 -->
+                                <div class="view-special">
+                                    <div class="top mlr-16">
+                                        <h3>기획</h3>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src='/public/images/@banner.jpg' alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>[특집] 도파민 중독 시대... 모든 길은 소셜 미디어로 통한다</h4>
+                                                </dd>
+                                                <dd> 습관적으로 휴대전화에 손을 뻗어 소셜 미디어에 접속한다. 침대에 누워서 인스타그램 피드를 확인하고, 밥을 먹으면서 유튜브를 본다. 정신없이 틱톡을 20개쯤 넘기면 어느새 내려야 하는 정류장이 보인다. 새로 업로드된 소식만 확인하겠다고 생각했더라도 ‘하나만 더 보자’는 속삭임이 뇌 속을 울린...</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-container">
+                                        <ul class="swiper-wrapper other-news">
+                                            <li class="swiper-slide">
+                                                <a href="javascript:;">
+                                                    <dl>
+                                                        <dt>
+                                                            <img src="/public/images/@event0.jpg"alt="">
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="news-flag">과학뉴스</p>
+                                                            <span>Intro 당신은 도파민 중독인가요?</span>
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:;">
+                                                    <dl>
+                                                        <dt>
+                                                            <img src="/public/images/@event0.jpg"alt="">
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="news-flag">과학뉴스</p>
+                                                            <span>Intro 당신은 도파민 중독인가요?</span>
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:;">
+                                                    <dl>
+                                                        <dt>
+                                                            <img src="/public/images/@event0.jpg"alt="">
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="news-flag">과학뉴스</p>
+                                                            <span>Intro 당신은 도파민 중독인가요?</span>
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:;">
+                                                    <dl>
+                                                        <dt>
+                                                            <img src="/public/images/@event0.jpg"alt="">
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="news-flag">과학뉴스</p>
+                                                            <span>Intro 당신은 도파민 중독인가요?</span>
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 주요기사 -->
+                                <div class="view-report mlr-16">
+                                    <h3>주요기사</h3>
+                                    <div class="report-list">
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src="/public/images/@event0.jpg" alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>
+                                                        <p class="news-flag">과학뉴스</p>
+                                                        <span>[에디터 노트] AI, 로봇 체인저의 등장</span>
+                                                    </h4>
+                                                </dd>
+                                            </dl>
+                                        </a>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src="/public/images/@event2.jpg" alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>
+                                                        <p class="news-flag">과학뉴스</p>
+                                                        <span>[에디터 노트] AI, 로봇 체인저의 등장</span>
+                                                    </h4>
+                                                </dd>
+                                            </dl>
+                                        </a>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src="/public/images/@event0.jpg" alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>
+                                                        <p class="news-flag">과학뉴스</p>
+                                                        <span>[에디터 노트] AI, 로봇 체인저의 등장</span>
+                                                    </h4>
+                                                </dd>
+                                            </dl>
+                                        </a>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src="/public/images/@event2.jpg" alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>
+                                                        <p class="news-flag">과학뉴스</p>
+                                                        <span>[에디터 노트] AI, 로봇 체인저의 등장</span>
+                                                    </h4>
+                                                </dd>
+                                            </dl>
+                                        </a>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src="/public/images/@event0.jpg" alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>
+                                                        <p class="news-flag">과학뉴스</p>
+                                                        <span>[에디터 노트] AI, 로봇 체인저의 등장</span>
+                                                    </h4>
+                                                </dd>
+                                            </dl>
+                                        </a>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src="/public/images/@event2.jpg" alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>
+                                                        <p class="news-flag">과학뉴스</p>
+                                                        <span>[에디터 노트] AI, 로봇 체인저의 등장</span>
+                                                    </h4>
+                                                </dd>
+                                            </dl>
+                                        </a>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src="/public/images/@event0.jpg" alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>
+                                                        <p class="news-flag">과학뉴스</p>
+                                                        <span>[에디터 노트] AI, 로봇 체인저의 등장</span>
+                                                    </h4>
+                                                </dd>
+                                            </dl>
+                                        </a>
+                                        <a href="javascript:;">
+                                            <dl>
+                                                <dt>
+                                                    <img src="/public/images/@event2.jpg" alt="">
+                                                </dt>
+                                                <dd>
+                                                    <h4>
+                                                        <p class="news-flag">과학뉴스</p>
+                                                        <span>[에디터 노트] AI, 로봇 체인저의 등장</span>
+                                                    </h4>
+                                                </dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 컨텐츠 영역 -->
+                    </div>
+                </div>
+            </div>
+            <!-- //D라이브러리 신규 작업 영역 -->
+        </div>
+    </body>
+</html>

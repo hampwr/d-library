@@ -1,0 +1,39 @@
+[참고사항]
+
+작업 파일
+css
+fonts
+html
+html_m
+images (이미지는 기존 폴더에 덮어주시면 될 것 같습니다)
+js
+
+-
+mall.css
+mall-m.css
+두가지는 아마도 기존 소스인 것 같습니다.
+서버에 올리실때 두개는 제외하고 올려주세요
+
+
+[파일 이름]
+*pc > html 폴더
+*mo > html_m 폴더
+모바일은 신고사유 팝업 작업 x
+
+*e매거진
+- e매거진 메인 sub-emgz-main.html
+- e매거진 상세 sub-emgz-tab.html
+- e매거진 기사 상세 sub-emgz-dtl.html
+
+*e북
+- e북 메인 sub-ebook-main.html
+- e북 2depth sub-ebook-depth.html
+- e북 상세 tab 상세 (소개/목차/기본정보/리뷰) sub-ebook-dtl.html
+
+*팝업
+- e북 상세 tab 리뷰 상품리뷰작성 팝업 review-write-pop.html
+- e북 상세 tab 리뷰 상품리뷰보기 팝업 review-view-pop.html
+- e북 상세 tab 리뷰 신고사유 팝업 review-report-pop.html
+
+*만화
+- e만화 상세 tab 상세(소개/목차/기본정보/리뷰) sub-cartoon-dtl.html

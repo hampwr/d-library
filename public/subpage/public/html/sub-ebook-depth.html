@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 기존 소스...로 추정됩니다 서버에 연결하면 지워주세요 -->
+        <link rel="stylesheet" href="/public/css/mall.css">
+        <!-- D라이브러리 신규 작업 영역 (필수) -->
+        <script src="/public/js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="/public/css/style.css">
+        <link rel="stylesheet" href="/public/css/swiper.min.css">
+        <script src="/public/js/script.js"></script>
+        <script src="/public/js/swiper.min.js"></script>
+        <!-- //D라이브러리 신규 작업 영역 (필수) -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- D라이브러리 신규 작업 영역 -->
+            <div class="sub-page ebook depth">
+                <div class="sub-big-tit">
+                    <p class="sub-title-48">깊이있는 eBook</p>
+                </div>
+                <ul class="com-tab-circle">
+                    <li>
+                        <button>전체</button>
+                    </li>
+                    <li class="selected">
+                        <button>과학</button>
+                        <ul class="two-depth">
+                            <li class="selected"><button>과학소설</button></li>
+                            <li><button>과학체험</button></li>
+                            <li><button>교과</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button>수학</button>
+                        <ul class="two-depth">
+                            <li><button>수학소설</button></li>
+                            <li><button>수학체험</button></li>
+                            <li><button>교과</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button>공학&IT</button>
+                        <ul class="two-depth">
+                            <li><button>공학&IT소설</button></li>
+                            <li><button>공학&IT체험</button></li>
+                            <li><button>교과</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button>만화&소설</button>
+                        <ul class="two-depth">
+                            <li><button>만화</button></li>
+                            <li><button>소설</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button>진로&직업</button>
+                        <ul class="two-depth">
+                            <li><button>진로</button></li>
+                            <li><button>직업</button></li>
+                            <li><button>진로&직업체험</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="tab-cont">
+                    <!-- 상세 검색 -->
+                    <div class="tab-result">
+                        <ul class="com-list-star wrap g32">
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">과학동아 2024년 02호</p>
+                                            <span class="desc">동아사이언스</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook-short.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">분노하는 사람들을 상대하는 법</p>
+                                            <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook2.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">분노하는 사람들을 상대하는 법</p>
+                                            <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">과학동아 2024년 02호</p>
+                                            <span class="desc">동아사이언스</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook-short.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">분노하는 사람들을 상대하는 법</p>
+                                            <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook2.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">분노하는 사람들을 상대하는 법</p>
+                                            <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">과학동아 2024년 02호</p>
+                                            <span class="desc">동아사이언스</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook-short.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">분노하는 사람들을 상대하는 법</p>
+                                            <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook2.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">분노하는 사람들을 상대하는 법</p>
+                                            <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">과학동아 2024년 02호</p>
+                                            <span class="desc">동아사이언스</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook-short.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">분노하는 사람들을 상대하는 법</p>
+                                            <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="thumb w180">
+                                        <img src="/public/images/dummy/ebook2.png">
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-12">UP</span> -->
+                                            <span class="th-ico blue fz-12">무료</span>
+                                            <!-- <span class="th-ico wh fz-12">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-12">Toon</span>
+                                            <span class="th-ico pur fz-12">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">분노하는 사람들을 상대하는 법</p>
+                                            <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                        </div>
+                                        <div class="review">
+                                            <span class="star star20">4.7</span>
+                                            <span class="count">(95)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 페이지네이션 -->
+                    <div class="layout-paging-wrap">
+                        <div class="paging-inner">
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_prev2"></i>
+                            </button>
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_prev1"></i>
+                            </button>
+                            <button class="num on">1</button>
+                            <button class="num">2</button>
+                            <button class="num">3</button>
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_next1"></i>
+                            </button>
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_next2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //D라이브러리 신규 작업 영역 -->
+        </div>
+    </body>
+</html>
