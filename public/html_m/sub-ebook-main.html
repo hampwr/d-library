@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 기존 소스...로 추정됩니다 서버에 연결하면 지워주세요 -->
+        <link rel="stylesheet" href="/public/css/mall-m.css">
+        <!-- D라이브러리 신규 작업 영역 (필수) -->
+        <script src="/public/js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="/public/css/style-m.css">
+        <link rel="stylesheet" href="/public/css/swiper.min.css">
+        <script src="/public/js/script-m.js"></script>
+        <script src="/public/js/swiper.min.js"></script>
+        <!-- //D라이브러리 신규 작업 영역 (필수) -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- D라이브러리 신규 작업 영역 -->
+            <div class="sub-page ebook main">
+                <div class="com-tab-circle swiper-container">
+                    <ul class="swiper-wrapper">
+                        <!-- <li class="swiper-slide">
+                            <button>전체</button>
+                        </li> -->
+                        <li class="swiper-slide selected">
+                            <button>과학</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button>수학</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button>공학&IT</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button>만화&소설</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <button>진로&직업</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cont">
+                    <!-- md 추천도서 -->
+                    <div class="ebook-md-pick">
+                        <div class="sec-title has-more mlr-16">
+                            <p class="sub-title-20">MD 추천 도서</p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <div class="sub-list-has-big-list wide-bg">
+                            <a href="javascript:;" class="com-big-thumb mlr-16">
+                                <div class="thumb">
+                                    <img src="/public/images/dummy/ebook.png">
+                                    <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                    <div class="thumb-ico">
+                                        <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                        <span class="th-ico blue fz-11">무료</span>
+                                        <span class="th-ico wh fz-11">PDF</span>
+                                        <!-- <span class="th-ico bk fz-11">Toon</span>
+                                        <span class="th-ico pur fz-11">Series</span> -->
+                                    </div>
+                                </div>
+                                <div class="thumb-info">
+                                    <ul class="tag mini">
+                                        <li>
+                                            <span>MD's pick</span>  
+                                        </li>
+                                        <li>
+                                            <span>오늘의 도서</span>  
+                                        </li>
+                                    </ul>
+                                    <div class="info">
+                                        <p class="name">나는 메트로폴리탄 미술관의 경비원입니다</p>
+                                        <span class="desc">패트릭 브링리 저자(글) · 김희정 , 조현주 번역</span>
+                                    </div>
+                                    <div class="review">
+                                        <span class="star star20">4.7</span>
+                                        <span class="count">(1,249)</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="com-list-star g11 mlr-16">
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="thumb shadow w100per">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">도둑맞은 집중력</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star12">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="thumb shadow w100per">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star12">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="thumb shadow w100per">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star12">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>            
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 지금! 베스트 -->
+                    <div class="ebook-best pt-30 pb-30">
+                        <div class="sec-title has-more mlr-16">
+                            <p class="sub-title-20">지금! 베스트</p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <div class="com-list-star-swiper swiper-container">
+                            <ul class="swiper-wrapper com-list-star g0">
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook-short.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">분노하는 사람들을 상대하는 법</p>
+                                                <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook-short.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">분노하는 사람들을 상대하는 법</p>
+                                                <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- D라이브러리 추천 pick! -->
+                    <div class="ebook-recomm-pick wide-bg-in">
+                        <div class="sec-title has-more column mlr-16">
+                            <p class="sub-title-22 blue-dot">D라이브러리<br>추천 Pick!</p>
+                            <a href="javascript:;" class="more">더보기 +</a>
+                        </div>
+                        <div class="com-list-star-swiper swiper-container">
+                            <ul class="swiper-wrapper com-list-star g0">
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook-short.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">분노하는 사람들을 상대하는 법</p>
+                                                <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook-short.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">분노하는 사람들을 상대하는 법</p>
+                                                <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 따끈따끈, 새로 들어온 책 -->
+                    <div class="ebook-new pt-30 pb-30">
+                        <div class="sec-title has-more mlr-16">
+                            <p class="sub-title-20">따끈따끈, 새로 들어온 책</p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <div class="com-list-star-swiper swiper-container">
+                            <ul class="swiper-wrapper com-list-star g0">
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook-short.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">분노하는 사람들을 상대하는 법</p>
+                                                <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook-short.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">분노하는 사람들을 상대하는 법</p>
+                                                <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 추천도서 -->
+                    <div class="ebook-recomm">
+                        <div class="sec-title has-more mlr-16">
+                            <p class="sub-title-20">추천도서</p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <div class="com-list-star-swiper swiper-container">
+                            <ul class="swiper-wrapper com-list-star g0">
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook-short.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">분노하는 사람들을 상대하는 법</p>
+                                                <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">과학동아 2024년 02호</p>
+                                                <span class="desc">동아사이언스</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <li class="swiper-slide">
+                                    <a href="javascript:;">
+                                        <div class="thumb w120">
+                                            <img src="/public/images/dummy/ebook-short.png">
+                                            <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                            <div class="thumb-ico">
+                                                <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                <span class="th-ico blue fz-10">무료</span>
+                                                <span class="th-ico wh fz-10">PDF</span>
+                                                <!-- <span class="th-ico bk fz-10">Toon</span>
+                                                <span class="th-ico pur fz-10">Series</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="thumb-info">
+                                            <div class="info">
+                                                <p class="name">분노하는 사람들을 상대하는 법</p>
+                                                <span class="desc">라이언 마틴 (글) · 신동숙 번역</span>
+                                            </div>
+                                            <div class="review">
+                                                <span class="star star20">4.7</span>
+                                                <span class="count">(95)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //D라이브러리 신규 작업 영역 -->
+        </div>
+    </body>
+</html>
