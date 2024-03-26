@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 기존 소스...로 추정됩니다 서버에 연결하면 지워주세요 -->
+        <link rel="stylesheet" href="/css/mall.css">
+        <link rel="stylesheet" href="/css/mall-m.css">
+        <!-- D라이브러리 신규 작업 영역 (필수) -->
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style-m.css">
+        <link rel="stylesheet" href="/css/swiper.min.css">
+        <script src="/js/script.js"></script>
+        <script src="/js/swiper.min.js"></script>
+        <!-- //D라이브러리 신규 작업 영역 (필수) -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- D라이브러리 신규 작업 영역 -->
+            <div class="sub-page search-list all">
+                <div class="search-input only-mo">
+                    <input type="text" placeholder="검색어">
+                    <button class="search-btn"></button>
+                </div>
+                <div class="sub-big-tit">
+                    <p class="sub-title-48"><span class="blue">‘검색어’</span>으로 총 <span>NN건</span>이 검색되었습니다.</p>
+                </div>
+                <!-- 키워드 탭 -->
+                <div class="search-tab-wrap">
+                    <div class="tit">연관 검색어</div>
+                    <ul class="search-tab">
+                        <li>
+                            <button>교과</button>
+                        </li>
+                        <li>
+                            <button>과목</button>
+                        </li>
+                        <li>
+                            <button>강좌</button>
+                        </li>
+                        <li>
+                            <button>과정</button>
+                        </li>
+                        <li>
+                            <button>경로</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // -->
+                <!-- 상세검색 -->
+                <div class="search-dtl-filter">
+                    <button class="search-filter-mo-btn only-mo">필터</button>
+                    <div class="search-filter-btn only-pc">
+                        <button></button>
+                    </div>
+                    <div class="filter-wrap only-pc">
+                        <div class="filter-item">
+                            <div class="th">구분</div>
+                            <ul class="td">
+                                <li class="radio-list check">
+                                    <input type="radio" id="all_1" name="radio1" checked>
+                                    <label for="all_1">전체</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_1_1" name="radio1">
+                                    <label for="chk_1_1">초등 저학년</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_1_2" name="radio1">
+                                    <label for="chk_1_2">초등 고학년</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_1_3" name="radio1">
+                                    <label for="chk_1_3">중등</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_1_4" name="radio1">
+                                    <label for="chk_1_4">고등</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_1_5" name="radio1">
+                                    <label for="chk_1_5">입시준비</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_1_6" name="radio1">
+                                    <label for="chk_1_6">학부모</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_1_7" name="radio1">
+                                    <label for="chk_1_7">일반</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-item">
+                            <div class="th">교과</div>
+                            <ul class="td">
+                                <li class="radio-list check">
+                                    <input type="radio" id="all_2" name="radio2" checked>
+                                    <label for="all_2">전체</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_1" name="radio2">
+                                    <label for="chk_2_1">물리</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_2" name="radio2">
+                                    <label for="chk_2_2">화학</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_3" name="radio2">
+                                    <label for="chk_2_3">생물</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_4" name="radio2">
+                                    <label for="chk_2_4">지구과학</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_5" name="radio2">
+                                    <label for="chk_2_5">과학사·문화</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_6" name="radio2">
+                                    <label for="chk_2_6">기후〮환경</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_7" name="radio2">
+                                    <label for="chk_2_7">융합탐구</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_8" name="radio2">
+                                    <label for="chk_2_8">수와 연산</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_9" name="radio2">
+                                    <label for="chk_2_9">변화와 관계</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_10" name="radio2">
+                                    <label for="chk_2_10">도형과 측정</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_2_11" name="radio2">
+                                    <label for="chk_2_11">자료와 가능성</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-item">
+                            <div class="th">진로</div>
+                            <ul class="td">
+                                <li class="radio-list check">
+                                    <input type="radio" id="all_3" name="radio3" checked>
+                                    <label for="all_3">전체</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_3_1" name="radio3">
+                                    <label for="chk_3_1">자연과학</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_3_2" name="radio3">
+                                    <label for="chk_3_2">공학</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_3_3" name="radio3">
+                                    <label for="chk_3_3">사회과학</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_3_4" name="radio3">
+                                    <label for="chk_3_4">인문학</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_3_5" name="radio3">
+                                    <label for="chk_3_5">의료</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_3_6" name="radio3">
+                                    <label for="chk_3_6">교육</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_3_7" name="radio3">
+                                    <label for="chk_3_7">예체능</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-item">
+                            <div class="th">연관 매체</div>
+                            <ul class="td">
+                                <li class="radio-list check">
+                                    <input type="radio" id="all_4" name="radio4" checked>
+                                    <label for="all_4">전체</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_4_1" name="radio4">
+                                    <label for="chk_4_1">과학동아</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_4_2" name="radio4">
+                                    <label for="chk_4_2">수학동아</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_4_3" name="radio4">
+                                    <label for="chk_4_3">어린이과학동아</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_4_4" name="radio4">
+                                    <label for="chk_4_4">어린이수학동아</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-item">
+                            <div class="th">기간</div>
+                            <ul class="td">
+                                <li class="radio-list check">
+                                    <input type="radio" id="all_5" name="radio5" checked>
+                                    <label for="all_5">전체</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_5_1" name="radio5">
+                                    <label for="chk_5_1">최근3개월</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_5_2" name="radio5">
+                                    <label for="chk_5_2">최근6개월</label>
+                                </li>
+                                <li class="radio-list check">
+                                    <input type="radio" id="chk_5_3" name="radio5">
+                                    <label for="chk_5_3">최근1년</label>
+                                </li>
+                                <li class="radio-list check flex">
+                                    <input type="radio" id="chk_5_4" name="radio5">
+                                    <label for="chk_5_4">직접입력</label>
+                                    <div class="date-area">
+                                        <input name="" class="dateStart" type="date" value="">
+                                        ~
+                                        <input name="" class="dateEnd" type="date" value="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-btn-wrap">
+                            <button class="btn fill">검색</button>
+                            <button class="btn line">검색 초기화</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- // -->
+                <div class="com-tab rectangle">
+                    <div class="tab-list">
+                        <button class="selected">전체</button>
+                        <button>잡지기사</button>
+                        <button>e매거진</button>
+                        <button>eBook</button>
+                        <button>연재만화</button>
+                        <button>시리즈</button>
+                    </div>
+                </div>
+                <div class="cont">
+                    <!-- 잡지기사 -->
+                    <div class="search-sec news">
+                        <div class="sec-title has-more">
+                            <p class="sub-title-20">잡지 기사 <span class="blue">(1,328)</span></p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <ul class="search-item-list news">
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/news-thumb.png"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">[메타버스 여행법] 로블록스 게임을 해보자! 로블록스 게임을 해보자!</p>
+                                            <span class="desc">어린이과학동아 ｜ 2024년 03호</span>
+                                        </div>
+                                        <div class="text row-2">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/news-thumb.png"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">[메타버스 여행법] 로블록스 게임을 해보자!</p>
+                                            <span class="desc">어린이과학동아 ｜ 2024년 03호</span>
+                                        </div>
+                                        <div class="text row-2">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/news-thumb.png"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">[메타버스 여행법] 로블록스 게임을 해보자!</p>
+                                            <span class="desc">어린이과학동아 ｜ 2024년 03호</span>
+                                        </div>
+                                        <div class="text row-2">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/news-thumb.png"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">[메타버스 여행법] 로블록스 게임을 해보자!</p>
+                                            <span class="desc">어린이과학동아 ｜ 2024년 03호</span>
+                                        </div>
+                                        <div class="text row-2">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- e매거진 -->
+                    <div class="search-sec emgz">
+                        <div class="sec-title has-more">
+                            <p class="sub-title-20">e매거진 <span class="blue">(1,328)</span></p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <ul class="search-item-list">
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb">
+                                        <img src="/images/dummy/sub-main-thumb.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <span class="th-ico wh fz-10">PDF</span>
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">과학동아 2024년 02호</p>
+                                            <span class="desc">동아사이언스</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb">
+                                        <img src="/images/dummy/sub-main-thumb.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <span class="th-ico wh fz-10">PDF</span>
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">과학동아 2024년 02호</p>
+                                            <span class="desc">동아사이언스</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb">
+                                        <img src="/images/dummy/sub-main-thumb.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <span class="th-ico wh fz-10">PDF</span>
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">과학동아 2024년 02호</p>
+                                            <span class="desc">동아사이언스</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb">
+                                        <img src="/images/dummy/sub-main-thumb.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <span class="th-ico wh fz-10">PDF</span>
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">과학동아 2024년 02호</p>
+                                            <span class="desc">동아사이언스</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ebook -->
+                    <div class="search-sec ebook">
+                        <div class="sec-title has-more">
+                            <p class="sub-title-20">eBook <span class="blue">(1,328)</span></p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <ul class="search-item-list">
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb">
+                                        <img src="/images/dummy/ebook.png"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <span class="th-ico blue fz-10">무료</span>
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">도둑맞은 집중력</p>
+                                            <span class="desc">작가명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb">
+                                        <img src="/images/dummy/ebook.png"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <span class="th-ico blue fz-10">무료</span>
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">도둑맞은 집중력</p>
+                                            <span class="desc">작가명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb">
+                                        <img src="/images/dummy/ebook.png"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <span class="th-ico blue fz-10">무료</span>
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">도둑맞은 집중력</p>
+                                            <span class="desc">작가명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb">
+                                        <img src="/images/dummy/ebook.png"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <span class="th-ico blue fz-10">무료</span>
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">도둑맞은 집중력</p>
+                                            <span class="desc">작가명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 연재만화 -->
+                    <div class="search-sec cartoon">
+                        <div class="sec-title has-more">
+                            <p class="sub-title-20">연재만화 <span class="blue">(1,328)</span></p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <ul class="search-item-list">
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/cartoon.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <span class="th-ico pink fz-10">UP</span>
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <span class="th-ico bk fz-10">Toon</span>
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">도둑맞은 집중력</p>
+                                            <span class="desc">작가명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/cartoon.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <span class="th-ico pink fz-10">UP</span>
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <span class="th-ico bk fz-10">Toon</span>
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">도둑맞은 집중력</p>
+                                            <span class="desc">작가명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/cartoon.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <span class="th-ico pink fz-10">UP</span>
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <span class="th-ico bk fz-10">Toon</span>
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">도둑맞은 집중력</p>
+                                            <span class="desc">작가명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/cartoon.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <span class="th-ico pink fz-10">UP</span>
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <span class="th-ico bk fz-10">Toon</span>
+                                            <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">도둑맞은 집중력</p>
+                                            <span class="desc">작가명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 시리즈 -->
+                    <div class="search-sec series">
+                        <div class="sec-title has-more">
+                            <p class="sub-title-20">시리즈 <span class="blue">(1,328)</span></p>
+                            <a href="javascript:;" class="more">더보기</a>
+                        </div>
+                        <ul class="search-item-list">
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/cartoon.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <span class="th-ico pur fz-10">Series</span>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">인공지능의 모든 것! 생성형 AI 기사 모음집</p>
+                                            <span class="desc">에디터명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/cartoon.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <span class="th-ico pur fz-10">Series</span>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">인공지능의 모든 것! 생성형 AI 기사 모음집</p>
+                                            <span class="desc">에디터명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/cartoon.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <span class="th-ico pur fz-10">Series</span>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">인공지능의 모든 것! 생성형 AI 기사 모음집</p>
+                                            <span class="desc">에디터명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">
+                                    <div class="thumb round">
+                                        <img src="/images/dummy/cartoon.jpg"/>
+                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                        <div class="thumb-ico">
+                                            <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                            <!-- <span class="th-ico blue fz-10">무료</span> -->
+                                            <!-- <span class="th-ico wh fz-10">PDF</span> -->
+                                            <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                            <span class="th-ico pur fz-10">Series</span>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-info">
+                                        <div class="info">
+                                            <p class="name">인공지능의 모든 것! 생성형 AI 기사 모음집</p>
+                                            <span class="desc">에디터명</span>
+                                        </div>
+                                        <div class="text row-3">
+                                            해요. 방법을 익히기 위해 로블록스 홈페이지 상단 <span class="blue">검색</span>창에 ‘편안한 점프 맵’을 <span class="blue">검색</span>한 뒤 접속해 주세요. 편안한 점프 맵은 블록이 있 는 곳으로 잘 점프해 블록 아래로 떨어지지 않고 끝까지 완주하면 성공하는 게임입니다. 간단한 게임이기 때문에 로블록스를 이제 막 시작하는 사람들이
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 페이지네이션 -->
+                    <div class="layout-paging-wrap only-pc">
+                        <div class="paging-inner">
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_prev2"></i>
+                            </button>
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_prev1"></i>
+                            </button>
+                            <button class="num on">1</button>
+                            <button class="num">2</button>
+                            <button class="num">3</button>
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_next1"></i>
+                            </button>
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_next2"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 페이지네이션 mo -->
+                    <div class="layout-paging-wrap only-mo">
+                        <div class="paging-inner">
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_prev1"></i>
+                            </button>
+                            <div class="num">
+                                <span class="current">1</span>
+                                <em>/</em>
+                                <span>5</span>
+                            </div>
+                            <button class="" tabindex="-1" type="button" disabled="">
+                                <i class="icons-page_next1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //D라이브러리 신규 작업 영역 -->
+
+            <!-- 모바일 검색필터 -->
+            <div class="filter-pop only-mo">
+                <div class="head">
+                    <span class="tit">필터</span>
+                    <button class="close-btn"></button>
+                </div>
+                <div class="filter-wrap">
+                    <div class="filter-item">
+                        <div class="th">구분</div>
+                        <ul class="td">
+                            <li class="radio-list check">
+                                <input type="radio" id="all_1_m" name="radio1_m" checked>
+                                <label for="all_1_m">전체</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_1_1_m" name="radio1_m">
+                                <label for="chk_1_1_m">초등 저학년</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_1_2_m" name="radio1_m">
+                                <label for="chk_1_2_m">초등 고학년</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_1_3_m" name="radio1_m">
+                                <label for="chk_1_3_m">중등</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_1_4_m" name="radio1_m">
+                                <label for="chk_1_4_m">고등</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_1_5_m" name="radio1_m">
+                                <label for="chk_1_5_m">입시준비</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_1_6_m" name="radio1_m">
+                                <label for="chk_1_6_m">학부모</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_1_7_m" name="radio1_m">
+                                <label for="chk_1_7_m">일반</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-item">
+                        <div class="th">교과</div>
+                        <ul class="td">
+                            <li class="radio-list check">
+                                <input type="radio" id="all_2_m" name="radio2_m" checked>
+                                <label for="all_2_m">전체</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_1_m" name="radio2_m">
+                                <label for="chk_2_1_m">물리</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_2_m" name="radio2_m">
+                                <label for="chk_2_2_m">화학</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_3_m" name="radio2_m">
+                                <label for="chk_2_3_m">생물</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_4_m" name="radio2_m">
+                                <label for="chk_2_4_m">지구과학</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_5_m" name="radio2_m">
+                                <label for="chk_2_5_m">과학사·문화</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_6_m" name="radio2_m">
+                                <label for="chk_2_6_m">기후〮환경</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_7_m" name="radio2_m">
+                                <label for="chk_2_7_m">융합탐구</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_8_m" name="radio2_m">
+                                <label for="chk_2_8_m">수와 연산</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_9_m" name="radio2_m">
+                                <label for="chk_2_9_m">변화와 관계</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_10_m" name="radio2_m">
+                                <label for="chk_2_10_m">도형과 측정</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_2_11_m" name="radio2_m">
+                                <label for="chk_2_11_m">자료와 가능성</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-item">
+                        <div class="th">진로</div>
+                        <ul class="td">
+                            <li class="radio-list check">
+                                <input type="radio" id="all_3_m" name="radio3_m" checked>
+                                <label for="all_3_m">전체</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_3_1_m" name="radio3_m">
+                                <label for="chk_3_1_m">자연과학</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_3_2_m" name="radio3_m">
+                                <label for="chk_3_2_m">공학</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_3_3_m" name="radio3_m">
+                                <label for="chk_3_3_m">사회과학</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_3_4_m" name="radio3_m">
+                                <label for="chk_3_4_m">인문학</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_3_5_m" name="radio3_m">
+                                <label for="chk_3_5_m">의료</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_3_6_m" name="radio3_m">
+                                <label for="chk_3_6_m">교육</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_3_7_m" name="radio3_m">
+                                <label for="chk_3_7_m">예체능</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-item">
+                        <div class="th">연관 매체</div>
+                        <ul class="td">
+                            <li class="radio-list check">
+                                <input type="radio" id="all_4_m" name="radio4_m" checked>
+                                <label for="all_4">전체</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_4_1_m" name="radio4_m">
+                                <label for="chk_4_1">과학동아</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_4_2_m" name="radio4_m">
+                                <label for="chk_4_2">수학동아</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_4_3_m" name="radio4_m">
+                                <label for="chk_4_3">어린이과학동아</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_4_4_m" name="radio4_m">
+                                <label for="chk_4_4">어린이수학동아</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-item">
+                        <div class="th">기간</div>
+                        <ul class="td">
+                            <li class="radio-list check">
+                                <input type="radio" id="all_5_m" name="radio5_m" checked>
+                                <label for="all_5">전체</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_5_1_m" name="radio5_m">
+                                <label for="chk_5_1">최근3개월</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_5_2_m" name="radio5_m">
+                                <label for="chk_5_2">최근6개월</label>
+                            </li>
+                            <li class="radio-list check">
+                                <input type="radio" id="chk_5_3_m" name="radio5_m">
+                                <label for="chk_5_3">최근1년</label>
+                            </li>
+                            <li class="radio-list check flex">
+                                <input type="radio" id="chk_5_4_m" name="radio5_m">
+                                <label for="chk_5_4">직접입력</label>
+                                <div class="date-area">
+                                    <input name="" class="dateStart" type="date" value="">
+                                    ~
+                                    <input name="" class="dateEnd" type="date" value="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-btn-wrap">
+                        <button class="btn fill">검색</button>
+                        <button class="btn line">검색 초기화</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

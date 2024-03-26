@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 기존 소스...로 추정됩니다 서버에 연결하면 지워주세요 -->
+        <link rel="stylesheet" href="../css/mall.css">
+        <link rel="stylesheet" href="../css/mall-m.css">
+        <!-- D라이브러리 신규 작업 영역 (필수) -->
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css">
+        <link rel="stylesheet" href="../css/swiper.min.css">
+        <script src="../js/script.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <!-- //D라이브러리 신규 작업 영역 (필수) -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- D라이브러리 신규 작업 영역 -->
+            <div class="sub-page mypage-buy cancel">
+                <div class="mypage-wrap">
+                    <div class="side">
+                        <div class="my-tit">마이페이지</div>
+                        <ul class="side-menu">
+                            <li>
+                                <a href="#none">회원정보 관리</a>
+                            </li>
+                            <li>
+                                <a href="#none">내 책장</a>
+                            </li>
+                            <li>
+                                <a href="#none">장성 댓글, 리뷰</a>
+                            </li>
+                            <li>
+                                <a href="#none">요금제 안내</a>
+                            </li>
+                            <li class="on">
+                                <a href="#none">구매 내역</a>
+                            </li>
+                            <li>
+                                <a href="#none">DS포인트 내역</a>
+                            </li>
+                            <li>
+                                <a href="#none">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont">
+                        <div class="top-my-info">
+                            <div class="my-info">
+                                <p class="name"><span>김동아</span>고객님 반갑습니다.</p>
+                                <div class="point-info">
+                                    <span>DS포인트</span>
+                                    <span class="point">3,000</span>
+                                </div>
+                            </div>
+                            <div class="my-pass">
+                                <div class="pass-box">
+                                    <div class="txt">
+                                        <p class="tit">월 5,900원으로 매거진 아티클부터 학습만화까지<br/>모든 콘텐츠를 무제한으로 만나 보세요.</p>
+                                        <ul class="desc">
+                                            <li>이용기간에 따라 최대 25% 할인</li>
+                                            <li>교사라면 추가 10% 할인 더!</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="pass-btn">무제한 PASS<br/>구매하기</a>
+                                </div>
+                                <div class="pass-txt">
+                                    <span class="txt">※ D라이브러리는 전국 과학/수학 선생님의 수업을 응원합니다. 교사 인증 후 할인 혜택을 받아가세요.</span>
+                                    <a href="#none" class="btn">교사 인증하기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy-list-view">
+                            <!-- 취소신청 -->
+                            <div class="buy-view-tit mo-title">취소 신청</div>
+                            <div class="buy-list-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>구매일시</th>
+                                            <th>상품정보</th>
+                                            <th>금액</th>
+                                            <th>결제수단</th>
+                                            <th>이용상태</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="data-div text-center">
+                                                <span class="order-date">2023.07.26</span>
+                                                <span class="order-num">202313219809</span>
+                                            </td>
+                                            <td class="info-area">
+                                                <a href="#none">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/sub-main-thumb.jpg"/>
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="pd-flag red">e매거진</span>
+                                                        <p class="name row-2">어린이수학동아 15호: 분수와 소수3(2023년 15호) </p>
+                                                        <span class="desc">기사 제목명 또는 회차명 회차명 1 화 기사 제목명 또는 회차명</span>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td class="price text-center">
+                                                <span>8,000원</span>
+                                                <!-- 모바일의 결제수단 영역 -->
+                                                <div class="only-mo">
+                                                    <span class="payment">카드결제</span>
+                                                </div>
+                                            </td>
+                                            <td class="payment text-center">
+                                                <span>카드결제</span>
+                                            </td>
+                                            <td class="use-status text-center">
+                                                <span class="state-flag">결제완료</span>
+                                                <a href="#none" class="state-btn">결제취소</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="buy-list-view">
+                            <!-- 취소사유 -->
+                            <div class="buy-view-tit small mo-title">취소 사유</div>
+                            <table class="buy-list-col-table">
+                                <tbody>
+                                    <tr>
+                                        <th>취소 사유</th>
+                                        <td>
+                                            <div class="search-wrap">
+                                                <div class="drop-down">
+                                                    <div class="selected">
+                                                        <a href="javascript:;">
+                                                            <span>선택</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="options">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:;">좋아서</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">싫어서</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>취소 상세 사유</th>
+                                        <td>
+                                            <div class="textarea">
+                                                <textarea placeholder="취소 사유를 입력해 주세요."></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            연락받을 연락처<span class="essential">*</span>
+                                        </th>
+                                        <td>
+                                            <div class="input-wrap">
+                                                <input type="text"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="refund-account">
+                                        <th>환불계좌</th>
+                                        <td>
+                                            <div class="drop-down">
+                                                <div class="selected">
+                                                    <a href="javascript:;">
+                                                        <span>선택</span>
+                                                    </a>
+                                                </div>
+                                                <div class="options">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:;">우리은행</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">하나은행</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="input-wrap account">
+                                                <input type="text"/>
+                                            </div>
+                                            <div class="input-wrap name">
+                                                <input type="text"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="buy-list-view refund-table">
+                            <!-- 환불 정보 -->
+                            <div class="buy-view-tit small mo-title">환불 정보</div>
+                            <table class="buy-list-col-table">
+                                <tbody>
+                                    <tr>
+                                        <th>환불상품금액</th>
+                                        <td><span>39,000원</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>총 환불예정금액</th>
+                                        <td><span>39,000원</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="cancel-btn-wrap">
+                            <button class="btn">취소</button>
+                            <button class="btn solid">접수하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //D라이브러리 신규 작업 영역 -->
+        </div>
+    </body>
+</html>

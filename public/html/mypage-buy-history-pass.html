@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 기존 소스...로 추정됩니다 서버에 연결하면 지워주세요 -->
+        <link rel="stylesheet" href="../css/mall.css">
+        <link rel="stylesheet" href="../css/mall-m.css">
+        <!-- D라이브러리 신규 작업 영역 (필수) -->
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css">
+        <link rel="stylesheet" href="../css/swiper.min.css">
+        <script src="../js/script.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <!-- //D라이브러리 신규 작업 영역 (필수) -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- D라이브러리 신규 작업 영역 -->
+            <div class="sub-page mypage-buy">
+                <div class="mypage-wrap">
+                    <div class="side">
+                        <div class="my-tit">마이페이지</div>
+                        <ul class="side-menu">
+                            <li>
+                                <a href="#none">회원정보 관리</a>
+                            </li>
+                            <li>
+                                <a href="#none">내 책장</a>
+                            </li>
+                            <li>
+                                <a href="#none">장성 댓글, 리뷰</a>
+                            </li>
+                            <li>
+                                <a href="#none">요금제 안내</a>
+                            </li>
+                            <li class="on">
+                                <a href="#none">구매 내역</a>
+                            </li>
+                            <li>
+                                <a href="#none">DS포인트 내역</a>
+                            </li>
+                            <li>
+                                <a href="#none">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont">
+                        <div class="top-my-info">
+                            <div class="my-info">
+                                <p class="name"><span>김동아</span>고객님 반갑습니다.</p>
+                                <div class="point-info">
+                                    <span>DS포인트</span>
+                                    <span class="point">3,000</span>
+                                </div>
+                            </div>
+                            <div class="my-pass">
+                                <div class="pass-box">
+                                    <div class="txt">
+                                        <div class="pass-info">
+                                            <p class="tit">D라이브러리 무제한 PASS<br/>
+                                                <span class="blue bold">1개월</span> 이용기간
+                                            </p>
+                                            <p class="tit text-center">
+                                                <span class="blue">2024.04.01 ~ 2024.05.01 </span>
+                                                <span class="pass-desc">(25일 남음)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="pass-btn">무제한 PASS<br/>구매하기</a>
+                                </div>
+                                <div class="pass-txt">
+                                    <span class="txt">※ D라이브러리는 전국 과학/수학 선생님의 수업을 응원합니다. 교사 인증 후 할인 혜택을 받아가세요.</span>
+                                    <a href="#none" class="btn">교사 인증하기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy-list-view">
+                            <div class="buy-view-tit only-pc">구매 내역 조회</div>
+                            <div class="search-wrap">
+                                <div class="drop-down w204">
+                                    <div class="selected">
+                                        <a href="javascript:;">
+                                            <span>주문일</span>
+                                        </a>
+                                    </div>
+                                    <div class="options">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;">주문일</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">주문일</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="date-area">
+                                    <input type="text" value="2022-07-26">
+                                    ~
+                                    <input type="text" value="2022-07-26">
+                                </div>
+                                <div class="btn-wrap">
+                                    <button class="date-btn active">전체</button>
+                                    <button class="date-btn">오늘</button>
+                                    <button class="date-btn">7일</button>
+                                    <button class="date-btn">1개월</button>
+                                    <button class="date-btn">3개월</button>
+                                    <button class="date-btn">1년</button>
+                                    <button class="submit-btn">조회</button>
+                                </div>
+                            </div>
+                            <p class="table-desc">※ 구매한 상품의 환불을 원하시는 경우 고객센터(02-6749-2002)로 문의 바랍니다.</p>
+                            <div class="buy-list-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>구매일시</th>
+                                            <th>상품정보</th>
+                                            <th>금액</th>
+                                            <th>결제수단</th>
+                                            <th>이용상태</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="nodata-div">
+                                            <td colspan="5" class="nodate">내역이 없습니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="data-div text-center">
+                                                <span class="order-date">2023.07.26</span>
+                                                <span class="order-num">202313219809</span>
+                                            </td>
+                                            <td class="info-area">
+                                                <a href="#none">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/sub-main-thumb.jpg"/>
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="pd-flag red">e매거진</span>
+                                                        <p class="name row-2">어린이수학동아 15호: 분수와 소수3(2023년 15호) </p>
+                                                        <span class="desc">기사 제목명 또는 회차명 회차명 1 화 기사 제목명 또는 회차명</span>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td class="price text-center">
+                                                <span>8,000원</span>
+                                                <!-- 모바일의 결제수단 영역 -->
+                                                <div class="only-mo">
+                                                    <span class="payment">카드결제</span>
+                                                </div>
+                                            </td>
+                                            <td class="payment text-center">
+                                                <span>카드결제</span>
+                                            </td>
+                                            <td class="use-status text-center">
+                                                <span class="state-flag">결제완료</span>
+                                                <a href="#none" class="state-btn">결제취소</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="data-div text-center">
+                                                <span class="order-date">2023.07.26</span>
+                                                <span class="order-num">202313219809</span>
+                                            </td>
+                                            <td class="info-area">
+                                                <a href="#none">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/cartoon.jpg"/>
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="pd-flag yellow">연재만화</span>
+                                                        <p class="name row-2">어린이수학동아 15호: 분수와 소수3(2023년 15호) </p>
+                                                        <span class="desc">회차명 1 화</span>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td class="price text-center">
+                                                <span>ⓟ3,000</span>
+                                                <!-- 모바일의 결제수단 영역 -->
+                                                <div class="only-mo">
+                                                    <span class="payment">DS포인트</span>
+                                                </div>
+                                            </td>
+                                            <td class="payment text-center">
+                                                <span>DS포인트</span>
+                                            </td>
+                                            <td class="use-status text-center">
+                                                <span class="state-flag">취소완료</span>
+                                                <!-- <a href="#none" class="state-btn">결제취소</a> -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="data-div text-center">
+                                                <span class="order-date">2023.07.26</span>
+                                                <span class="order-num">202313219809</span>
+                                            </td>
+                                            <td class="info-area">
+                                                <a href="#none">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/sub-main-thumb.jpg"/>
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="pd-flag blue">eBook</span>
+                                                        <p class="name row-2">시리즈 제목명 제목명 제목명 2줄까지 2줄까지 시리즈 제목명 제목명 제목명 2줄까지 2줄까지 시리즈 제목명 제목명 제목명 2줄까지 2줄까지 시리즈 제목명 제목명 제목명 2줄까지 2줄까지</p>
+                                                        <span class="desc">기사 제목명 제목명</span>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td class="price text-center">
+                                                <span>ⓟ3,000</span>
+                                                <!-- 모바일의 결제수단 영역 -->
+                                                <div class="only-mo">
+                                                    <span class="payment">DS포인트</span>
+                                                </div>
+                                            </td>
+                                            <td class="payment text-center">
+                                                <span>DS포인트</span>
+                                            </td>
+                                            <td class="use-status text-center">
+                                                <span class="state-flag">결제완료</span>
+                                                <!-- <a href="#none" class="state-btn">결제취소</a> -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="data-div text-center">
+                                                <span class="order-date">2023.07.26</span>
+                                                <span class="order-num">202313219809</span>
+                                            </td>
+                                            <td class="info-area">
+                                                <a href="#none">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/ebook.png"/>
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="pd-flag blue">eBook</span>
+                                                        <p class="name row-2">시리즈 제목명 제목명 제목명 2줄까지 2줄까지 시리즈 제목명 제목명 제목명 2줄까지 2줄까지 시리즈 제목명 제목명 제목명 2줄까지 2줄까지 시리즈 제목명 제목명 제목명 2줄까지 2줄까지</p>
+                                                        <span class="desc">기사 제목명 제목명</span>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td class="price text-center">
+                                                <span>ⓟ3,000</span>
+                                                <!-- 모바일의 결제수단 영역 -->
+                                                <div class="only-mo">
+                                                    <span class="payment">DS포인트</span>
+                                                </div>
+                                            </td>
+                                            <td class="payment text-center">
+                                                <span>DS포인트</span>
+                                            </td>
+                                            <td class="use-status text-center">
+                                                <span class="state-flag blue">대여완료</span>
+                                                <!-- <a href="#none" class="state-btn">결제취소</a> -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- 페이지네이션 -->
+                        <div class="layout-paging-wrap type2">
+                            <div class="paging-inner">
+                                <button class="" tabindex="-1" type="button" disabled="">
+                                    <i class="icons-page_prev1"></i>
+                                </button>
+                                <div class="num">
+                                    <span class="current">1</span>
+                                    <em>/</em>
+                                    <span>5</span>
+                                </div>
+                                <button class="" tabindex="-1" type="button" disabled="">
+                                    <i class="icons-page_next1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //D라이브러리 신규 작업 영역 -->
+        </div>
+    </body>
+</html>
