@@ -1,8 +1,0 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_767_46105" fill="white">
-<rect x="6" y="10" width="20" height="18" rx="1"/>
-</mask>
-<rect x="6" y="10" width="20" height="18" rx="1" stroke="#212121" stroke-width="4" mask="url(#path-1-inside-1_767_46105)"/>
-<path d="M12 14V10C12 7.79086 13.7909 6 16 6V6C18.2091 6 20 7.79086 20 10V14" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
-<circle cx="27.5" cy="4.5" r="2.5" fill="#FF3E66"/>
-</svg>

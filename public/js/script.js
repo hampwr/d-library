@@ -1,8 +1,14 @@
 $(document).ready(function () {
-
     // 필터 버튼
     $(".search-dtl-filter .search-filter-btn button").click(function() {
         $(this).parent().parent('.search-dtl-filter').toggleClass('active');
+    });
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("view-sns")){
+                $(".view-sns .share .more").hide();
+        }
     });
     
     // 드롭다운
@@ -27,10 +33,9 @@ $(document).ready(function () {
     $(document).bind('click', function(e) {
         var $clicked = $(e.target);
         if (!$clicked.parents().hasClass("drop-down")){
-                $(".drop-down .options ul").hide();
-            }
+            $(".drop-down .options ul").hide();
+        }
     });
-    
     
     // circle tab 원형 탭
     $(".com-tab-circle button").on("click", function() {
@@ -41,6 +46,13 @@ $(document).ready(function () {
         // 현재 클릭된 버튼의 형제 중에서 .two-depth의 첫 번째 li에 .selected 클래스 추가
         $(this).siblings('.two-depth').find('li:first').addClass('selected');
     });
+
+    if($('.mypage-buy').length > 0) {
+        // 마이페이지 목록 접기/펼치기
+        $(".list-epi .epi-list-btn").click(function() {
+            $(this).parent().parent().parent().find('.list-epi').toggleClass('active')
+        });
+    }
 
     // 메인
     if($('.main').length > 0) {
@@ -303,8 +315,141 @@ $(document).ready(function () {
                 nextEl: ".emgz.emgz-tab .slider-wrap .next",
                 prevEl: ".emgz.emgz-tab .slider-wrap .prev",
             },    
+            breakpoints: {
+                1024: {
+                    slidesPerView: 1, //브라우저가 1024 보다 작을 때
+                    spaceBetween: 0,
+                },
+            },
         });
     }
+
+    $(document).ready(function() {
+        // 윈도우 크기 변경 이벤트 핸들러
+        function handleWindowSize() {
+            var ww = $(window).width();
+            if (ww < 1024) {
+                // 작은 화면일 때의 처리
+                $(".view-sns .share a").off("click").on("click", function() {
+                    $(this).siblings('.more').toggle();
+                });
+
+                // 탭 뎁스 슬라이드
+                var tabDepthSwiper = new Swiper(".com-list-star-swiper", {
+                    slidesPerView: 'auto',
+                    spaceBetween: 20,
+                    slidesOffsetBefore: 16,
+                    slidesOffsetAfter: 16,
+                    observer: true,
+                    observeParents: true,
+                });
+
+                if($('.emgz.main').length > 0) {
+                    // 매거진 메인 지금 올라온 매거진 슬라이드
+                    var mgzViewwSwiper = new Swiper(".update-mgz .swiper-container", {
+                        slidesPerView: 'auto',
+                        spaceBetween: 20,
+                        slidesOffsetBefore: 16,
+                        slidesOffsetAfter: 16,
+                        observer: true,
+                        observeParents: true,
+                    });
+                }
+
+                if($('.emgz.emgz-tab').length > 0) {
+                    // 탭 상세 슬라이드
+                    var tabDtlSwiper = new Swiper(".view-special .swiper-container", {
+                        slidesPerView: 'auto',
+                        spaceBetween: 12,
+                        slidesOffsetBefore: 16,
+                        slidesOffsetAfter: 16,
+                        observer: true,
+                        observeParents: true,
+                    });
+                }
+
+                // e매거진 상세
+                if($('.search-list').length > 0) {
+                    $(".search-filter-mo-btn").on("click", function() {
+                        $('.filter-pop').addClass('active');
+                        $('html').addClass('lock');
+                    });
+                    $(".filter-pop .close-btn").on("click", function() {
+                        $('.filter-pop').removeClass('active');
+                        $('html').removeClass('lock');
+                    });
+
+                    // 
+                    $(".filter-pop .filter-wrap .filter-item .th").on("click", function() {
+                        if ($(this).parent().hasClass("active")) {
+                            $(this).parent().removeClass('active')
+                        } else {
+                            // $(".filter-pop .filter-wrap .filter-item").removeClass('active');
+                            $(this).parent().addClass('active');
+                        }
+                    });
+                }
+
+                // 매거진 메인 지금 올라온 매거진 슬라이드
+                var mgzViewwSwiper = new Swiper(".com-tab-circle.swiper-container", {
+                    slidesPerView: 'auto',
+                    spaceBetween: 6,
+                    slidesOffsetBefore: 16,
+                    slidesOffsetAfter: 16,
+                    observer: true,
+                    observeParents: true,
+                });
+            } else {
+                // 큰 화면일 때의 처리
+                $(".view-sns .share a").off("click");
+            }
+
+            // big 스와이퍼
+            if (ww > 768) {
+                mySwiper = new Swiper(".sub-list-has-big-swiper .slider", {
+                    slidesPerView: 'auto',
+                    // loop : true,
+                    spaceBetween: 50,
+                    navigation: {
+                        nextEl: ".sub-list-has-big-swiper .next",
+                        prevEl: ".sub-list-has-big-swiper .prev",
+                    },  
+                    breakpoints: {
+                        576: {
+                            slidesPerView: 3,  //브라우저가 768 보다 작을 때
+                            spaceBetween: 11,
+                        },
+            
+                        768: {
+                            slidesPerView: 3,  //브라우저가 768 보다 작을 때
+                            spaceBetween: 11,
+                        },
+            
+                        860: {
+                            slidesPerView: 2,  //브라우저가 920 보다 작을 때
+                            spaceBetween: 11,
+                        },
+                        920: {
+                            spaceBetween: 11,  //브라우저가 920 보다 작을 때
+                        },
+            
+                        1280: {
+                            spaceBetween: 24,  //브라우저가 1280 보다 작을 때
+                        },
+                    },  
+                });
+            } else if (ww <= 768) {
+            // swiper 호출 안함
+            }
+        }
+    
+        // 초기 실행
+        handleWindowSize();
+    
+        // 윈도우 크기 변경 이벤트에 핸들러 연결
+        $(window).on("resize", handleWindowSize);
+    });
+    
 
     // e매거진 상세
     if($('.emgz.emgz-dtl').length > 0) {
@@ -328,92 +473,26 @@ $(document).ready(function () {
         }
     }
 
-    // big 스와이퍼
-    var ww = $(window).width();
-        if (ww > 768) {
-        mySwiper = new Swiper(".sub-list-has-big-swiper .slider", {
-            slidesPerView: 'auto',
-            // loop : true,
-            spaceBetween: 50,
-            navigation: {
-                nextEl: ".sub-list-has-big-swiper .next",
-                prevEl: ".sub-list-has-big-swiper .prev",
-            },  
-            breakpoints: {
-                576: {
-                    slidesPerView: 3,  //브라우저가 768 보다 작을 때
-                    spaceBetween: 11,
-                },
-    
-                768: {
-                    slidesPerView: 3,  //브라우저가 768 보다 작을 때
-                    spaceBetween: 11,
-                },
-    
-                860: {
-                    slidesPerView: 2,  //브라우저가 920 보다 작을 때
-                    spaceBetween: 11,
-                },
-                920: {
-                    spaceBetween: 11,  //브라우저가 920 보다 작을 때
-                },
-    
-                1280: {
-                    spaceBetween: 24,  //브라우저가 1280 보다 작을 때
-                },
-            },  
-        });
-        } else if (ww <= 768) {
-    // swiper 호출 안함
-    }
-
-    // big 스와이퍼
-    // var bigSwiper = new Swiper(".sub-list-has-big-swiper .slider", {
-    //     slidesPerView: 'auto',
-    //     loop : true,
-    //     spaceBetween: 50,
-    //     navigation: {
-    //         nextEl: ".sub-list-has-big-swiper .next",
-    //         prevEl: ".sub-list-has-big-swiper .prev",
-    //     },    
-    //     breakpoints: {
-    //         576: {
-    //             slidesPerView: 3,  //브라우저가 768 보다 작을 때
-    //             spaceBetween: 60,
-    //         },
-
-    //         768: {
-    //             slidesPerView: 3,  //브라우저가 768 보다 작을 때
-    //             spaceBetween: 11,
-    //         },
-
-    //         860: {
-    //             slidesPerView: 2,  //브라우저가 920 보다 작을 때
-    //             spaceBetween: 11,
-    //         },
-    //         920: {
-    //             spaceBetween: 11,  //브라우저가 920 보다 작을 때
-    //         },
-
-    //         1280: {
-    //             spaceBetween: 24,  //브라우저가 1280 보다 작을 때
-    //         },
-    //     },
-
-    // });
-
     // 배경있음 + 미니 스와이퍼
     var wideBgSwiper = new Swiper(".wide-bg-in .slider-wrap .slider", {
         slidesPerView: 5,
         spaceBetween: 40,
         observer: true,
         observeParents: true,
-        // slidesPerGroup : 4,
         loop : true,
         navigation: {
             nextEl: ".wide-bg-in .next",
             prevEl: ".wide-bg-in .prev",
         },    
+        // 반응형
+        breakpoints: {
+            1024: {
+                slidesOffsetBefore: 16,
+                slidesOffsetAfter: 16,
+                slidesPerView: 'auto',
+                spaceBetween: 20, //브라우저가 1024 보다 작을 때
+            },
+        },  
     });
 
     // 상품 상세
@@ -430,6 +509,15 @@ $(document).ready(function () {
                 nextEl: ".layout-recomm-item .next",
                 prevEl: ".layout-recomm-item .prev",
             },    
+            // 반응형
+            breakpoints: {
+                1024: {
+                    slidesOffsetBefore: 16,
+                    slidesOffsetAfter: 16,
+                    slidesPerView: 'auto',
+                    spaceBetween: 24, //브라우저가 1024 보다 작을 때
+                },
+            },  
         });
 
         // 상품 리뷰 슬라이드
@@ -464,7 +552,61 @@ $(document).ready(function () {
             // 클릭된 탭에 해당하는 탭 내용 보여주기
             var targetTabContent = ".layout-pd-cont .tab-cont .pd-" + $(this).attr("class").split(" ")[1];
             $(targetTabContent).toggle();
+
+            // 클릭된 탭에 해당하는 .layout-pd-view 영역으로 스크롤
+            var viewTop = $(".layout-pd-view").offset().top;
+            $("html, body").animate({
+                scrollTop: viewTop
+            }, 0);
         });
+
+        // 상세 탭 fixed
+        var tab = $(".layout-pd-tab");
+        var viewTop = $(".layout-pd-view").offset().top;
+        var viewBottom = viewTop + $(".layout-pd-view").outerHeight();
+
+        $(window).on("scroll", function() {
+            var scrollTop = $(window).scrollTop();
+
+            // .layout-pd-view에 진입하면 .fixed 클래스 추가
+            if (scrollTop >= viewTop && scrollTop <= viewBottom && !tab.hasClass("fixed")) {
+                tab.addClass("fixed");
+            } else if (scrollTop > viewBottom && tab.hasClass("fixed")) {
+                // .layout-pd-view에서 나가면 .fixed 클래스 제거
+                tab.removeClass("fixed");
+            } else if (scrollTop < viewTop && tab.hasClass("fixed")) {
+                // .layout-pd-view 영역 위로 스크롤 시 .fixed 클래스 제거
+                tab.removeClass("fixed");
+            }
+        });
+
+        var ww = $(window).width();
+        if (ww < 1024) {  //1024px 보다 작은 경우
+            // 리뷰 리스트 하단 슬라이더
+            var recommSwiper = new Swiper(".pd-rating-list .review-thumb", {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                observer: true,
+                observeParents: true,
+            });
+
+            // 상품 리뷰
+            var reviewSwiper = new Swiper(".swiper-review-wrap .slider-wrap .slider", {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                loop:true,
+                allowTouchMove:true,
+                observer: true,
+                observeParents: true,
+                navigation: {
+                    nextEl: ".swiper-review-wrap .next",
+                    prevEl: ".swiper-review-wrap .prev",
+                },    
+            });
+
+          } else { // 1024px 보다 큰 경우
+            
+          }
     }
     
     if($('.modal-wrap').length > 0) {
@@ -489,6 +631,12 @@ $(document).ready(function () {
             watchSlidesProgress: true,
             observer: true,
             observeParents: true,
+            // 반응형
+            breakpoints: {
+                1024: {
+                    slidesPerView: 'auto', //브라우저가 1024 보다 작을 때
+                },
+            },  
         });
         var galleryTop = new Swiper('.pd-img-slider .swiper-container', {
             spaceBetween: 10,
@@ -500,6 +648,30 @@ $(document).ready(function () {
             },
             thumbs: {
                 swiper: galleryThumbs,
+            },
+        });
+        
+        // 가로 슬라이드 24
+        var row24Swiper = new Swiper(".row-swiper-24", {
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+            slidesOffsetBefore: 16,
+            slidesOffsetAfter: 16,
+            watchOverflow: true,
+            observer: true,
+            observeParents: true,
+        });
+        
+        // 가로 슬라이드 10
+        var row10Swiper = new Swiper(".row-swiper-10", {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            watchOverflow: true,
+            observer: true,
+            observeParents: true,
+            scrollbar: {
+                el: '.row-swiper-10 .swiper-scrollbar',
+                draggable: true,
             },
         });
     }
