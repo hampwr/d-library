@@ -2200,7 +2200,7 @@
     padding: 14px 0;
     display: inline-block;
   }
-/* // */
+/* ///* e북 뷰어 - 댓글 포함된 버전 */ */
 
 html.lock,
 html.lock body {
@@ -2276,6 +2276,14 @@ textarea:focus {
 }
 
 /* 기본세팅 */
+body {
+    overflow-x: hidden;
+}
+
+body.visible {
+    overflow-x: visible
+}
+
 body input[type="checkbox"] {
     width: 20px;
     height: 20px;
@@ -3750,8 +3758,9 @@ img+.paid {
     height:40px;
     font-size:16px;
     font-weight:bold;
+    color:#4f3da9; 
     border:1px solid #4f3da9;
-    background:#fff; color:#4f3da9; 
+    background:#fff;
 }
 
 /* 슬라이더 */
@@ -3857,7 +3866,6 @@ img+.paid {
 }
 
 /* 컨텐츠 영역 */
-
 .emgz.emgz-tab .mtitle {
     position:relative;
     position:relative;
@@ -4474,7 +4482,6 @@ img+.paid {
 }
 
 /* 댓글 */
-
 .emgz.emgz-dtl .news-replay {
     margin-top: 50px;
 }
@@ -4629,7 +4636,6 @@ img+.paid {
     margin: 10px 0;
 }
 
-
 .emgz.emgz-dtl .reply-list .reply-txt .reply-cts {
     display: flex;
     gap: 0 5px;
@@ -4778,11 +4784,18 @@ img+.paid {
     padding-top: 4px;
 }
 
+.sub-page.ebook.dtl {
+    max-width: 100%;
+    width: 100%;
+}
+
 .sub-page.dtl .com-big-thumb {
     display: flex;
     align-items: start;
     gap: 0 120px;
     padding-bottom: 50px;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .sub-page.dtl .com-big-thumb .left .thumb .thumb-ico {
@@ -4943,7 +4956,7 @@ img+.paid {
     background-size: 20px;
 }
 
-.sub-page.dtl .com-big-thumb .thumb-info .star  {
+.sub-page.dtl .com-big-thumb .thumb-info .star {
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
@@ -5005,6 +5018,16 @@ img+.paid {
 }
 
 /* 함께 보면 좋은 추천 e도서 */
+.sub-page.dtl .product-items-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.sub-page.dtl .wide-bg-in-bg::before {
+    left: 0;
+    width: 100%;
+}
+
 .sub-page.dtl .layout-recomm-item .sec-title {
     margin-bottom: 30px;
 }
@@ -5046,6 +5069,8 @@ img+.paid {
     align-items: normal;
     gap: 0 60px;
     width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .layout-pd-cont .layout-pd-view {
@@ -5132,6 +5157,7 @@ img+.paid {
     color: #212121;
     padding: 50px 0 20px;
 }
+
 /* 소개 */
 .layout-pd-cont .layout-pd-view .pd-intro .pd-intro-list .box {
     background: #F7F7F7;
@@ -5145,6 +5171,7 @@ img+.paid {
     line-height: 180%;
     color: #424242;
 }
+
 /* 목차 */
 .layout-pd-cont .layout-pd-view .pd-inner-cont .sub-tit {
     padding: 50px 0 20px;
@@ -5980,7 +6007,7 @@ img+.paid {
 }
 
 .modal-wrap.review-view .view-arrow {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -7774,6 +7801,16 @@ img+.paid {
     overflow-x: hidden;
 }
 
+@media screen and (min-width: 1024px) {
+    .emgz.emgz-tab .view-mgz ul {
+        transition-duration: 0 !important;
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
+    .emgz.emgz-tab .view-mgz li {
+        margin: 0 0 24px 24px !important;
+    }
+}
+
 @media screen and (min-width: 1921px) {
     .main .main-top-visual .slick-visual {
         margin-left: -30%;
@@ -8092,6 +8129,9 @@ img+.paid {
 }
 
 @media screen and (max-width: 768px) {
+    .main .main-top-visual {
+        margin-top: 0;
+    }
     .main .main-layout.best-div .slider-wrap {
         margin-left: 0;
         margin-right: 0;
@@ -8621,5 +8661,16 @@ img+.paid {
 
     .main .main-layout-01 .slider-wrap .swiper .swiper-wrapper.left {
         margin-left: 170px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .main .main-layout-01 .slider-wrap .swiper .swiper-wrapper {
+        margin-left: -7px;
+    }
+
+    .main .main-layout-01 .slider-wrap .swiper .swiper-wrapper.left {
+        margin-left: -1px;
     }
 }
