@@ -478,6 +478,72 @@
         content: none;
     }
 
+    /* 인디케이터 헤더 공통 */
+    .indicator.only-mo {
+        display: flex;
+    }
+
+    .indicator {
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+        background: #fff;
+        padding: 13px 8px;
+        text-align: center;
+        z-index: 3;
+        box-shadow: 0px 1px 2px -2px rgba(0, 0, 0, 0.04), 0px 4px 2px -2px rgba(0, 0, 0, 0.02);
+
+    }
+
+    .indicator a {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px auto;
+    }
+
+    .indicator .gnb-back-btn {
+        position: absolute;
+        top: calc(50% - 16px);
+        left: 8px;
+        background-image: url('../images/icons/page_back.svg');
+    }
+
+    .indicator .title {
+        max-width: calc(100% - 160px);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #212121;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+    }
+    .indicator .utill {
+        position: absolute;
+        top: calc(50% - 16px);
+        right: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .indicator .utill .gnb-search-btn {
+        background-image: url('../images/icons/search.svg');
+        background-size: 22px auto;
+    }
+
+    .indicator ~ .has-mo-header {
+        padding-top: 48px !important;
+    }
+
     /* e매거진 메인 --------------------------------------- */
     .emgz.main .com-tab {
         margin-bottom: 20px;
@@ -715,6 +781,10 @@
         margin-bottom: 30px;
     }
 
+    .emgz.emgz-tab .com-tab.rectangle {
+        margin: 28px 14px 30px;
+    }
+
     .emgz.emgz-tab .sel-mgz {
         display: flex;
         align-items: center;
@@ -801,6 +871,7 @@
 
     .emgz.emgz-tab .slider-wrap {
         margin: 20px auto 30px;
+        overflow: hidden;
     }
 
     .emgz.emgz-tab .slider-wrap a img {
@@ -906,6 +977,7 @@
     .emgz.emgz-tab .view-mgz .view-special {
         flex-direction: column;
         align-items: start;
+        overflow: hidden;
     }
 
     .emgz.emgz-tab .view-mgz .view-special .swiper-container {
@@ -1111,7 +1183,7 @@
 
     .emgz.emgz-dtl .view-group .view {
         width: 100%;
-        padding: 20px 16px;
+        padding: 0 20px 16px;
         border-right: none;
     }
 
