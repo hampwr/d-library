@@ -1665,8 +1665,8 @@
     
     .sub-page.ebook.main .com-list-star-swiper .com-list-star .thumb.w180,
     .sub-page.ebook.main .com-list-star-swiper .com-list-star .thumb.w180 ~ .thumb-info,
-    .sub-page.ebook.main .wide-bg-in .slider-wrap .swiper-wrapper li,
-    .sub-page.ebook.main .wide-bg-in .slider-wrap .swiper-wrapper li a,
+    .sub-page.ebook.main .wide-bg-in .slider-wrap .swiper-wrapper .swiper-slide,
+    .sub-page.ebook.main .wide-bg-in .slider-wrap .swiper-wrapper .swiper-slide a,
     .sub-page.ebook.main .wide-bg-in .com-list-star .thumb.w150,
     .sub-page.ebook.main .wide-bg-in .com-list-star .thumb.w150 ~ .thumb-info {
         min-width: 120px;
