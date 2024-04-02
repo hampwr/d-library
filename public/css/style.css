@@ -2308,7 +2308,7 @@ img+.paid {
     font-weight:bold;
     border-top:1px solid #ddd;
     border-right:1px solid #ddd;
-    border-bottom:1px solid #999;
+    /* border-bottom:1px solid #999; */
     text-align:center;
 }
 
@@ -2472,8 +2472,188 @@ img+.paid {
 	text-align:center;
 }
 
-.emgz.emgz-dtl .reply-list .paginate {
-	padding:40px 0 40px 0;
+.emgz.emgz-dtl .reply-view .reply_txt {
+    border-bottom:1px solid #ebebeb
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_name {
+    float:left;
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+    line-height: 28px;
+    margin-top:20px; color:#888
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_name strong {
+    font-size:16px;
+    color:#333
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_name strong:after {
+    content: '|';
+    font-size:16px;
+    color:#888;
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_name a {
+    background-color:#999;
+    color:#fff;
+    font-size: 13px;
+    font-weight:bold;
+    line-height: 1.4;
+    padding:3px 11px 3px 9px;
+    margin:0 6px 0;
+    cursor:pointer;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_name input {
+    width:100px;
+    border:1px solid #ddd;
+    margin-left:5px;
+    padding:2px 2px 3px;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_name .reply_ok {
+    display:inline-block;
+    background:#333;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    padding:2px 6px 3px;
+    cursor:pointer;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_link {
+    float:right;
+    margin-top:20px;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_link div {
+    display:inline-block;
+    border:1px solid #d8d8d8;
+    text-align:center;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_link div:nth-child(n+2) {
+    margin-left:10px
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_link div strong {
+    display:inline-block;
+    font-size:13px;
+    color:#333;
+    padding:3px 13px;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_link div span {
+    display:inline-block;
+    font-size:13px;
+    font-weight:bold;
+    color:#29acbf;
+    padding:3px 13px;
+    border-left:1px solid #f5f5f5;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_cts {
+    clear:both;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_cts p {
+    padding:10px 0 20px;
+    line-height:21px;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_cts textarea {
+    border:1px solid #ddd;
+    width:650px;
+    height:50px;
+    padding:10px;
+    margin:10px 0 20px 0;
+}
+
+.emgz.emgz-dtl .reply-view .reply_txt .reply_cts .reply_submit {
+    display:inline-block;
+    width:70px;
+    height:46px;
+    margin:10px 0 0 5px;
+    text-align:center;
+    background-color:#333;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    vertical-align:top;
+    padding-top:26px;
+    cursor:pointer;
+}
+
+.emgz.emgz-dtl .reply-view .paginate{
+    padding: 40px 0 40px 0;
+}
+
+.reply-view .paginate {
+    padding:40px 0 0 0;
+    text-align:center;
+    font-size:0;
+}
+
+.reply-view .paginate #comment_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reply-view .paginate a.now {
+    font-size:15px;
+    color:#41b5c6;
+    border:2px solid #41b5c6;
+    z-index:1;
+}
+
+.reply-view .paginate a{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #d0d0d0;
+    width:30px;
+    height:29px;
+    line-height:29px;
+    text-align:center;
+    margin:0 0 0 -1px;
+    font-size:12px;
+    vertical-align:top;
+    font-weight:bold;
+}
+
+.reply-view .paginate a.active,
+.reply-view .paginate a:hover{
+    color:#41b5c6;
+    border:2px solid #41b5c6;
+    z-index:1;
+    text-decoration:none !important;
+}
+
+.reply-view .paginate a span {
+    display: block;
+}
+
+.reply-view .paginate a.prev,
+.reply-view .paginate a.next {
+    width:32px;
+    height:29px;
+    text-indent:-9999px;
+}
+
+.reply-view .paginate a.prev {background:url('../images/icons/arrow-left.svg') no-repeat center / 100% auto; border-right: none}
+.reply-view .paginate a.next {background:url('../images/icons/arrow-right.svg') no-repeat center / 100% auto; border-left: none}
+
+.reply-view .paginate a.prev:hover,
+.reply-view .paginate a.next:hover {
+    border-width: 1px;
+    border-color:#d0d0d0;
 }
 
 /* 다른 기사 */

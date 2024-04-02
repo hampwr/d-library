@@ -1534,6 +1534,84 @@
         text-align: center;
     }
 
+    .emgz.emgz-dtl .reply-view .reply_txt {
+        padding: 20px 0;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_name strong {
+        font-weight: 500;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_name strong:after {
+        content: none;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_name,
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_link {
+        margin-top: 0;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .btn-del {
+        display: block;
+        margin-top: 10px;
+        width: 57px;
+        height: 30px;
+        border: 1px solid #999999;
+        font-size: 13px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .date {
+        font-size: 12px;
+        color: #888;
+        margin-top: 5px;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_cts p {
+        padding: 15px 0 0;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_link div:nth-child(n+2) {
+        margin-left: 5px;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_link div strong {
+        font-size: 12px;
+        width: 40px;
+        height: 28px;
+        font-weight: 400;
+        border-right: 1px solid #d8d7d8;
+        line-height: 28px;
+        color: #555;
+        text-align: center;
+        padding: 0;
+    }
+
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_link div span {
+        height: 28px;
+        font-size: 13px;
+        width: 40px;
+        line-height: 28px;
+        font-weight: 500;
+        letter-spacing: 0;
+        text-align: center;
+        white-space: nowrap;
+        padding: 0;
+    }
+    .emgz.emgz-dtl .reply-view .reply_txt .reply_link .disagree span {
+        color: #555555;
+    }
+
+    .reply-view .paginate a:not(.prev,.next) {
+        border: none;
+    }
+
+    .reply-view .paginate a.prev {border-right: 1px solid #d0d0d0}
+    .reply-view .paginate a.next {border-left: 1px solid #d0d0d0}
+
+
+
     /* 다른 기사 */
     .emgz.emgz-dtl .other-news-div {
         margin-top: 40px ;
