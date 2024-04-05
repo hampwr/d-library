@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 기존 소스...로 추정됩니다 서버에 연결하면 지워주세요 -->
+        <link rel="stylesheet" href="../css/mall.css">
+        <!-- <link rel="stylesheet" href="../css/mall-m.css"> -->
+        <!-- D라이브러리 신규 작업 영역 (필수) -->
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css">
+        <link rel="stylesheet" href="../css/swiper.min.css">
+        <!-- slick.css / slick-theme.css는 index.html에만 필요 -->
+        <!-- <link rel="stylesheet" href="../css/slick.css" />
+        <link rel="stylesheet" href="../css/slick-theme.css" /> -->
+        <script src="../js/script.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <!-- slick.min.js는 index.html에만 필요 -->
+        <!-- <script src="../js/slick.min.js"></script> -->
+        <!-- //D라이브러리 신규 작업 영역 (필수) -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- D라이브러리 신규 작업 영역 -->
+            <div class="sub-page mypage-buy bookshelf">
+                <div class="mypage-wrap">
+                    <div class="side">
+                        <div class="my-tit">마이페이지</div>
+                        <ul class="side-menu">
+                            <li>
+                                <a href="#none">회원정보 관리</a>
+                            </li>
+                            <li>
+                                <a href="#none">내 책장</a>
+                            </li>
+                            <li>
+                                <a href="#none">장성 댓글, 리뷰</a>
+                            </li>
+                            <li>
+                                <a href="#none">요금제 안내</a>
+                            </li>
+                            <li class="on">
+                                <a href="#none">구매 내역</a>
+                            </li>
+                            <li>
+                                <a href="#none">DS포인트 내역</a>
+                            </li>
+                            <li>
+                                <a href="#none">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont">
+                        <div class="top-my-info">
+                            <div class="my-info">
+                                <p class="name"><span>김동아</span>고객님 반갑습니다.</p>
+                                <div class="point-info">
+                                    <span>DS포인트</span>
+                                    <span class="point">3,000</span>
+                                </div>
+                            </div>
+                            <div class="my-pass">
+                                <div class="pass-box">
+                                    <div class="txt">
+                                        <p class="tit">월 5,900원으로 매거진 아티클부터 학습만화까지<br/>모든 콘텐츠를 무제한으로 만나 보세요.</p>
+                                        <ul class="desc">
+                                            <li>이용기간에 따라 최대 25% 할인</li>
+                                            <li>교사라면 추가 10% 할인 더!</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="pass-btn">무제한 PASS<br/>구매하기</a>
+                                </div>
+                                <div class="pass-txt">
+                                    <span class="txt">※ D라이브러리는 전국 과학/수학 선생님의 수업을 응원합니다. 교사 인증 후 할인 혜택을 받아가세요.</span>
+                                    <a href="#none" class="btn">교사 인증하기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 최근 본 상품 -->
+                        <div class="recent-view-pd">
+                            <div class="sub-title-22">최근 본 상품</div>
+                            <div class="recent-list">
+                                <div class="slider-wrap">
+                                    <div class="prev view-arrow">이전</div>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper com-list-star">
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/ebook.png">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/ebook-short.png">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/cartoon.jpg">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/ebook.png">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/ebook-short.png">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/cartoon.jpg">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/ebook.png">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/ebook-short.png">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="del-btn"><img src="../images/icons/btn-del.svg"></button>
+                                                <a href="javascript:;">
+                                                    <div class="thumb">
+                                                        <img src="../images/dummy/cartoon.jpg">
+                                                        <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                        <div class="thumb-ico">
+                                                            <!-- <span class="th-ico pink fz-11">UP</span> -->
+                                                            <span class="th-ico blue fz-11">무료</span>
+                                                            <span class="th-ico wh fz-11">PDF</span>
+                                                            <!-- <span class="th-ico bk fz-11">Toon</span>
+                                                            <span class="th-ico pur fz-11">Series</span> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumb-info">
+                                                        <div class="info">
+                                                            <p class="name">과학동아 2024년 02호</p>
+                                                            <span class="desc">동아사이언스</span>
+                                                        </div>
+                                                        <div class="review mt8">
+                                                            <span class="star star16">4.7</span>
+                                                            <span class="count">(95)</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="next view-arrow">다음</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 대여 tab -->
+                        <div class="rental-tab">
+                            <!-- 탭 -->
+                            <div class="com-tab rectangle">
+                                <div class="tab-list">
+                                    <button class="selected">대여한 상품</button>
+                                    <button>대여한 기사&회차</button>
+                                </div>
+                            </div>
+                            <!-- 탭 컨텐츠 -->
+                            <div class="tab-cont">
+                                <ul class="com-tab-circle x-scroll">
+                                    <li class="selected">
+                                        <button>전체</button>
+                                    </li>
+                                    <li>
+                                        <button>E매거진</button>
+                                    </li>
+                                    <li>
+                                        <button>E도서</button>
+                                    </li>
+                                </ul>
+                                <!-- 탭 리스트 -->
+                                <div class="rental-list">
+                                    <ul class="com-list-star wrap">
+                                        <li>
+                                            <!-- round 클래스 추가 -->
+                                            <div class="thumb shadow round">
+                                                <img src="../images/dummy/ebook.png">
+                                                <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                <div class="thumb-ico">
+                                                    <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                    <span class="th-ico blue fz-10">무료</span>
+                                                    <span class="th-ico wh fz-10">PDF</span>
+                                                    <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                                    <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                                </div>
+                                                <div class="thumb-dimed">
+                                                    <!-- 이어보기/상세보기/닫기 -->
+                                                    <div class="btn-wrap">
+                                                        <button class="del-btn"></button>
+                                                        <a href="javascript:;" class="btn solid">이어보기</a>
+                                                        <a href="javascript:;" class="btn line">상세보기</a>
+                                                    </div>
+                                                    <!-- 기간이 만료된 상품입니다 -->
+                                                    <!-- <div class="txt">
+                                                        기간 만료된<br>상품입니다.
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="thumb-info">
+                                                <div class="info">
+                                                    <p class="name">썸네일 라운드 예시</p>
+                                                    <div class="marking">60%</div>
+                                                    <div class="rental-date">
+                                                        <div class="date">2312.12 ~ 24.01.12</div>
+                                                        <div class="return-date">(7일 남음)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb shadow">
+                                                <img src="../images/dummy/ebook.png">
+                                                <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                <div class="thumb-ico">
+                                                    <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                    <span class="th-ico blue fz-10">무료</span>
+                                                    <span class="th-ico wh fz-10">PDF</span>
+                                                    <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                                    <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                                </div>
+                                                <div class="thumb-dimed">
+                                                    <!-- 이어보기/상세보기/닫기 -->
+                                                    <div class="btn-wrap">
+                                                        <button class="del-btn"></button>
+                                                        <a href="javascript:;" class="btn solid">이어보기</a>
+                                                        <a href="javascript:;" class="btn line">상세보기</a>
+                                                    </div>
+                                                    <!-- 기간이 만료된 상품입니다 -->
+                                                    <!-- <div class="txt">
+                                                        기간 만료된<br>상품입니다.
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="thumb-info">
+                                                <div class="info">
+                                                    <p class="name">도둑맞은 집중력</p>
+                                                    <div class="marking">60%</div>
+                                                    <div class="rental-date">
+                                                        <div class="date">2312.12 ~ 24.01.12</div>
+                                                        <div class="return-date">(7일 남음)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb shadow">
+                                                <img src="../images/dummy/sub-main-thumb.jpg">
+                                                <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                <div class="thumb-ico">
+                                                    <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                    <span class="th-ico blue fz-10">무료</span>
+                                                    <span class="th-ico wh fz-10">PDF</span>
+                                                    <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                                    <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                                </div>
+                                                <div class="thumb-dimed">
+                                                    <!-- 이어보기/상세보기/닫기 -->
+                                                    <div class="btn-wrap">
+                                                        <button class="del-btn"></button>
+                                                        <!-- <a href="javascript:;" class="btn solid">이어보기</a> -->
+                                                        <a href="javascript:;" class="btn line">상세보기</a>
+                                                    </div>
+                                                    <!-- 기간이 만료된 상품입니다 -->
+                                                    <!-- <div class="txt">
+                                                        기간 만료된<br>상품입니다.
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="thumb-info">
+                                                <div class="info">
+                                                    <p class="name">도둑맞은 집중력</p>
+                                                    <div class="marking">60%</div>
+                                                    <div class="rental-date">
+                                                        <div class="date">2312.12 ~ 24.01.12</div>
+                                                        <!-- <div class="return-date">(7일 남음)</div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb shadow">
+                                                <img src="../images/dummy/ebook-short.png">
+                                                <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                <div class="thumb-ico">
+                                                    <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                    <span class="th-ico blue fz-10">무료</span>
+                                                    <span class="th-ico wh fz-10">PDF</span>
+                                                    <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                                    <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                                </div>
+                                                <div class="thumb-dimed">
+                                                    <!-- 이어보기/상세보기/닫기 -->
+                                                    <div class="btn-wrap">
+                                                        <button class="del-btn"></button>
+                                                        <a href="javascript:;" class="btn solid">이어보기</a>
+                                                        <a href="javascript:;" class="btn line">상세보기</a>
+                                                    </div>
+                                                    <!-- 기간이 만료된 상품입니다 -->
+                                                    <!-- <div class="txt">
+                                                        기간 만료된<br>상품입니다.
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="thumb-info">
+                                                <div class="info">
+                                                    <p class="name">도둑맞은 집중력</p>
+                                                    <div class="marking">45/245</div>
+                                                    <div class="rental-date">
+                                                        <div class="date">2312.12 ~ 24.01.12</div>
+                                                        <div class="return-date">(7일 남음)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb shadow">
+                                                <img src="../images/dummy/ebook.png">
+                                                <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                <div class="thumb-ico">
+                                                    <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                    <span class="th-ico blue fz-10">무료</span>
+                                                    <span class="th-ico wh fz-10">PDF</span>
+                                                    <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                                    <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                                </div>
+                                                <div class="thumb-dimed">
+                                                    <!-- 이어보기/상세보기/닫기 -->
+                                                    <div class="btn-wrap">
+                                                        <button class="del-btn"></button>
+                                                        <a href="javascript:;" class="btn solid">이어보기</a>
+                                                        <a href="javascript:;" class="btn line">상세보기</a>
+                                                    </div>
+                                                    <!-- 기간이 만료된 상품입니다 -->
+                                                    <!-- <div class="txt">
+                                                        기간 만료된<br>상품입니다.
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="thumb-info">
+                                                <div class="info">
+                                                    <p class="name">도둑맞은 집중력</p>
+                                                    <div class="marking">60%</div>
+                                                    <div class="rental-date">
+                                                        <div class="date">2312.12 ~ 24.01.12</div>
+                                                        <div class="return-date">(7일 남음)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb shadow">
+                                                <img src="../images/dummy/sub-main-thumb.jpg">
+                                                <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                <div class="thumb-ico">
+                                                    <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                    <span class="th-ico blue fz-10">무료</span>
+                                                    <span class="th-ico wh fz-10">PDF</span>
+                                                    <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                                    <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                                </div>
+                                                <div class="thumb-dimed">
+                                                    <!-- 이어보기/상세보기/닫기 -->
+                                                    <!-- <div class="btn-wrap">
+                                                        <button class="del-btn"></button>
+                                                        <a href="javascript:;" class="btn solid">이어보기</a>
+                                                        <a href="javascript:;" class="btn line">상세보기</a>
+                                                    </div> -->
+                                                    <!-- 기간이 만료된 상품입니다 -->
+                                                    <div class="txt">
+                                                        기간 만료된<br>상품입니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="thumb-info">
+                                                <div class="info">
+                                                    <p class="name">도둑맞은 집중력</p>
+                                                    <div class="marking">60%</div>
+                                                    <div class="rental-date">
+                                                        <div class="date">2312.12 ~ 24.01.12</div>
+                                                        <!-- <div class="return-date">(7일 남음)</div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb shadow">
+                                                <img src="../images/dummy/ebook-short.png">
+                                                <!-- .thumb-ico 크기별로 .fz-15 .fz-12 .fz-11 .fz-10 클래스 추가 -->
+                                                <div class="thumb-ico">
+                                                    <!-- <span class="th-ico pink fz-10">UP</span> -->
+                                                    <span class="th-ico blue fz-10">무료</span>
+                                                    <span class="th-ico wh fz-10">PDF</span>
+                                                    <!-- <span class="th-ico bk fz-10">Toon</span> -->
+                                                    <!-- <span class="th-ico pur fz-10">Series</span> -->
+                                                </div>
+                                                <div class="thumb-dimed">
+                                                    <!-- 이어보기/상세보기/닫기 -->
+                                                    <div class="btn-wrap">
+                                                        <button class="del-btn"></button>
+                                                        <a href="javascript:;" class="btn solid">이어보기</a>
+                                                        <a href="javascript:;" class="btn line">상세보기</a>
+                                                    </div>
+                                                    <!-- 기간이 만료된 상품입니다 -->
+                                                    <!-- <div class="txt">
+                                                        기간 만료된<br>상품입니다.
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="thumb-info">
+                                                <div class="info">
+                                                    <p class="name">도둑맞은 집중력</p>
+                                                    <div class="marking">45/245</div>
+                                                    <div class="rental-date">
+                                                        <div class="date">2312.12 ~ 24.01.12</div>
+                                                        <div class="return-date">(7일 남음)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //탭 리스트 -->
+                                <!-- 데이터 없을 때 -->
+                                <div class="nodata">대여한 상품이 없습니다.</div>
+                            </div>
+                            
+                            <!-- 페이지네이션 -->
+                            <div class="layout-paging-wrap type2">
+                                <div class="paging-inner">
+                                    <button class="" tabindex="-1" type="button" disabled="">
+                                        <i class="icons-page_prev1"></i>
+                                    </button>
+                                    <div class="num">
+                                        <span class="current">1</span>
+                                        <em>/</em>
+                                        <span>5</span>
+                                    </div>
+                                    <button class="" tabindex="-1" type="button" disabled="">
+                                        <i class="icons-page_next1"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 책장 스타일 -->
+                        <div class="lib-style">
+                            <div class="lib-style-tit">당신의 책장은 <span class="blue">진화의 거장, 찰스 다윈</span> 스타일이에요!</div>
+                            <div class="inner-box">
+                                <div class="box-item related-date">
+                                    <p class="tit">📒 당신이 많이 본 교과 단원이에요</p>
+                                    <ul class="cont-box">
+                                        <li>
+                                            <span class="name">생활과과학</span>
+                                            <span class="desc">2. 아름다운생활_<br>식품과 환경 오염원</span>
+                                        </li>
+                                        <li>
+                                            <span class="name">융합과학</span>
+                                            <span class="desc">6. 에너지와 환경_<br>탄소 순환과 기후 변화</span>
+                                        </li>
+                                        <li>
+                                            <span class="name">지구과학Ⅰ</span>
+                                            <span class="desc">4. 대기와 해양의<br>상호작용 기후 변화의 요인</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-item recomm-date">
+                                    <p class="tit">🎓️ 이런 진로 어때요?</p>
+                                    <ul class="cont-box">
+                                        <li>
+                                            <span class="name">환경학·환경공학</span>
+                                        </li>
+                                        <li>
+                                            <span class="name">토목공학</span>
+                                        </li>
+                                        <li>
+                                            <span class="name">항공·우주공학</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //D라이브러리 신규 작업 영역 -->
+        </div>
+    </body>
+</html>

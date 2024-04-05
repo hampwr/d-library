@@ -51,29 +51,32 @@ $(document).ready(function () {
         $(".list-epi .epi-list-btn").click(function() {
             $(this).parent().parent().parent().find('.list-epi').toggleClass('active')
         });
-    }
 
-    //e매거진 tab
-    if($('.emgz.emgz-tab').length > 0) {
-        // e매거진 tabs 스와이퍼 슬라이드
-        var swiper = new Swiper(".emgz.emgz-tab .slider-wrap .slider", {
-            slidesPerView: 4,
-            spaceBetween: 40,
-            loop : true,
-            observer: true,
-            observeParents: true,
-            navigation: {
-                nextEl: ".emgz.emgz-tab .slider-wrap .next",
-                prevEl: ".emgz.emgz-tab .slider-wrap .prev",
-            },    
-            breakpoints: {
-                1024: {
-                    slidesPerView: 1, //브라우저가 1024 보다 작을 때
-                    spaceBetween: 0,
+        // 최근 본 상품 스와이퍼 초기화 함수
+        function initializeRecentSwiper() {
+            return new Swiper(".recent-list .slider-wrap .slider", {
+                slidesPerView: 6,
+                spaceBetween: 28,
+                observer: true,
+                observeParents: true,
+                watchOverflow:true,
+                navigation: {
+                    nextEl: ".recent-list .slider-wrap .next",
+                    prevEl: ".recent-list .slider-wrap .prev",
                 },
-            },
+            });
+        }
+
+        // 최근 본 상품 스와이퍼 초기화
+        var recentSwiper = initializeRecentSwiper();
+
+        // del-btn을 클릭할 때 refreshSwiper 함수 호출
+        document.querySelector('.del-btn').addEventListener('click', function() {
+            recentSwiper.destroy(); // 이전 swiper 객체 파기
+            recentSwiper = initializeRecentSwiper(); // 새로운 swiper 객체 생성
         });
     }
+
 
     $(document).ready(function() {
         // 윈도우 크기 변경 이벤트 핸들러
@@ -446,6 +449,28 @@ $(document).ready(function () {
                         $('.main-layout-01 .slider-wrap .swiper .swiper-wrapper').addClass('left');
                     });
                 }
+            }
+            
+            //e매거진 tab
+            if($('.emgz.emgz-tab').length > 0) {
+                // e매거진 tabs 스와이퍼 슬라이드
+                var swiper = new Swiper(".emgz.emgz-tab .slider-wrap .slider", {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                    loop : true,
+                    observer: true,
+                    observeParents: true,
+                    navigation: {
+                        nextEl: ".emgz.emgz-tab .slider-wrap .next",
+                        prevEl: ".emgz.emgz-tab .slider-wrap .prev",
+                    },    
+                    breakpoints: {
+                        1024: {
+                            slidesPerView: 1, //브라우저가 1024 보다 작을 때
+                            spaceBetween: 0,
+                        },
+                    },
+                });
             }
         }
     
