@@ -1,1 +1,9 @@
+[작업 html]
 마이페이지 > 내책장 mypage-my-bookshelf.html
+최근 본 상품 삭제시 팝업 mypage-recent-del-pop.html
+
+마이페이지 > 작성댓글 mypage-my-write.html
+마이페이지 > 작성리뷰 mypage-my-write2.html
+
+[작업 영역 html 내 아래 주석 확인]
+240407 추가 작업
