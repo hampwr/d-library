@@ -64,6 +64,12 @@ $(document).ready(function () {
                     nextEl: ".recent-list .slider-wrap .next",
                     prevEl: ".recent-list .slider-wrap .prev",
                 },
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 2,  //브라우저가 1024 보다 작을 때
+                        spaceBetween: 32,
+                    },
+                },  
             });
         }
 

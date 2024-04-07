@@ -267,6 +267,7 @@
         width: 100%;
         height: 144.5vw;
         min-height: 520px;
+        max-height: 520px;
     }
 
     .com-big-thumb .thumb {
@@ -2394,6 +2395,37 @@
         color: #BDBDBD;
     }
 
+    .modal-wrap.alert-pop {
+        max-width: 500px;
+    }
+
+    .modal-wrap.alert-pop .modal-inner {
+        width: 100%;
+        min-width: auto;
+        max-width: 100%;
+    }
+
+    .modal-wrap.alert-pop .modal-txt {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .modal-wrap.alert-pop .modal-btn {
+        margin: 20px 0 10px;
+    }
+
+    .modal-wrap.alert-pop .modal-btn button {
+        width: auto;
+        border-radius: 6px;
+        padding: 13px 32px;
+    }
+
+    .modal-wrap .modal-btn .line {/* 버튼명 */
+        color: #424242;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+    }
+
 
     /* 팝업 - 리뷰 작성 */
     .modal-wrap.review-write .modal-inner {
@@ -2801,16 +2833,15 @@
     }
 
     .sub-page .com-tab.rectangle {
-        margin: 0 14px;
+        margin: 0 16px;
     }
 
     .sub-page .com-tab.rectangle .tab-list button {
         position: relative;
         width: 33.3333%;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 13px;
         line-height: 18px;
-        color: #757575;
         box-shadow: 1px 0 0 0 #e0e0e0;
         background-color: #fff;
         padding: 9px;
@@ -2824,12 +2855,13 @@
 
     .sub-page .com-tab.rectangle .tab-list button.selected:after {
         content: "";
-        left: -1px;
-        top: -1px;
+        left: 0;
+        top: 0;
         width: calc(100% - 2px);
         width: -webkit-calc(100% - 2px);
         height: calc(100% - 2px);
         height: -webkit-calc(100% - 2px);
+        font-weight: 700;
     }
 
     .search-list .cont .search-sec {
@@ -3091,6 +3123,10 @@
         display: none;
     }
 
+    .side {
+        display: none;
+    }
+
     .sub-page.mypage-buy .mypage-wrap .cont .buy-list-view {
         margin-top: 0;
         padding: 24px 16px 0;
@@ -3339,4 +3375,269 @@
         font-size: 16px;
         line-height: 140%;
     }
+
+    .mypage-buy.bookshelf .recent-view-pd {
+        margin: 72px 16px 0;
+    }
+
+    .mypage-buy.bookshelf .recent-view-pd .sub-title-22 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+
+    .mypage-buy.bookshelf .recent-view-pd .recent-list .swiper {
+        padding: 24px 0;
+        margin: 0 46px 0 46px;
+    }
+
+    .mypage-buy.bookshelf .recent-view-pd .recent-list .view-arrow {
+        top: 33%;
+    }
+
+    .mypage-buy.bookshelf .recent-view-pd .recent-list .prev {
+        left: -2px;
+    }
+
+    .mypage-buy.bookshelf .recent-view-pd .recent-list .next {
+        right: 2px;
+    }
+
+    .mypage-buy.bookshelf .recent-view-pd .recent-list .swiper-slide {
+        max-width: none;
+    }
+
+    .mypage-buy.bookshelf .recent-view-pd .recent-list .swiper-slide a {
+        width: auto;
+        padding-right: 7px;
+    }
+
+    .mypage-buy.bookshelf .recent-view-pd .recent-list .swiper-slide .del-btn {
+        right: 0px;
+    }
+
+    .mypage-buy.bookshelf .rental-tab .com-tab {
+        margin: 40px 16px;
+    }
+
+    .mypage-buy.bookshelf .rental-tab .com-tab .tab-list {
+        flex-wrap: nowrap;
+    }
+
+    .mypage-buy.bookshelf .rental-tab .com-tab .tab-list button {
+        width: 100%;
+    }
+
+    .mypage-buy.bookshelf .rental-tab .tab-cont .com-tab-circle {
+        gap: 8px;
+        margin: 40px 0 24px;
+    }
+
+    .mypage-buy.bookshelf .rental-tab .tab-cont .com-tab-circle li:nth-of-type(1) {
+        margin-left: 16px;
+    }
+
+    .mypage-buy.bookshelf .rental-tab .tab-cont .com-tab-circle li:nth-last-of-type(1) {
+        margin-right: 16px;
+    }
+
+    .mypage-buy.bookshelf .rental-tab .tab-cont .com-tab-circle button {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: #757575;
+        border-color:#9E9E9E;
+        padding: 3px 24px;
+    }
+
+    .mypage-buy.bookshelf .rental-tab .tab-cont .com-tab-circle .selected button {
+        color: #fff;
+        border-color: #42C9DD;
+    } 
+
+    .mypage-buy.bookshelf .rental-list .com-list-star li {
+        width: calc(50% - 14px);
+    }
+
+    .mypage-buy.bookshelf .rental-list .com-list-star {
+        gap: 27px 28px;
+        justify-content: space-between;
+        margin: 0 16px;
+    }
+
+    .mypage-buy.bookshelf .rental-list .com-list-star .thumb  {
+        filter: none;
+        margin-bottom: 60px;
+    }
+
+    .mypage-buy.bookshelf .rental-list .com-list-star .thumb.round {
+        border-radius: 0;
+        overflow: inherit;
+    }
+
+    .mypage-buy.bookshelf .rental-list .com-list-star .thumb.round img {
+        border-radius: 4px;
+    }
+
+    .mypage-buy.bookshelf .rental-list .com-list-star .thumb.round .thumb-dimed {
+        border-radius: 4px;
+    }
+
+    .mypage-buy.bookshelf .rental-list .com-list-star .thumb .thumb-dimed.utill-btn {
+        display: flex !important;
+        top: auto;
+        bottom: -48px;
+        height: 36px;
+        background: none;
+        text-align: center;
+        margin-top: 12px;
+        border-radius: 20px;
+    }
+
+    .mypage-buy.bookshelf .rental-list .thumb-dimed .btn.line,
+    .mypage-buy.bookshelf .rental-list .thumb-dimed .del-btn {
+        display: none;
+    }
+
+    .mypage-buy.bookshelf .rental-list .thumb-dimed .btn.none {
+        display: block;
+    }
+
+    .mypage-buy.bookshelf .rental-list .thumb-dimed .btn-wrap {
+        width: 100%;
+    }
+    
+    .mypage-buy.bookshelf .rental-list .thumb-dimed .btn.solid {
+        width: 100%;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        color: #757575;
+        border: 1px solid #42C9DD;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 8px 20px;
+    }
+
+    .mypage-buy.bookshelf .lib-style {
+        margin: 40px 16px 0;
+    }
+
+    .mypage-buy.bookshelf .lib-style .lib-style-tit {
+        align-items: start;
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    .mypage-buy.bookshelf .lib-style .lib-style-tit .mo-flex {
+        margin-left: 0;
+    }
+
+    .mypage-buy.bookshelf .lib-style .inner-box {
+        gap: 32px;
+        padding: 24px 12px;
+    }
+    
+    .mypage-buy.bookshelf .lib-style .tit {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .mypage-buy.bookshelf .lib-style .cont-box {
+        display: flex;
+        gap: 8px;
+    }
+
+    .mypage-buy.bookshelf .lib-style .cont-box li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 13.5px 8px;
+    }
+
+    .mypage-buy.bookshelf .lib-style .cont-box .name {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mypage-buy.bookshelf .lib-style .cont-box .desc {
+        font-size: 11px;
+        line-height: 15px;
+        color: #616161;
+        letter-spacing: -0.1px;
+        margin-top: 5px;
+    }
+
+    /* 마이페이지 작성댓글, 리뷰 */
+    .mypage-buy.my-write .my-write-tab {
+        margin-top: 74px;
+    }
+
+    .mypage-buy.my-write .my-write-tab .sub-title-22 {
+        display: none;
+    }
+
+    .mypage-buy.my-write .com-tab.rectangle {
+        min-height: auto;
+        margin-bottom: 24px;
+    }
+
+    .mypage-buy.my-write .com-tab.rectangle .tab-list {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .mypage-buy.my-write .com-tab.rectangle .tab-list button {
+        width: 100%;
+    }
+
+    .mypage-buy.my-write .my-write-tab .tab-cont .write-list {
+        margin: 0 16px;
+    }
+
+    .mypage-buy.my-write .my-write-tab .tab-cont .write-list .top .txt .pd-flag,
+    .mypage-buy.my-write .my-write-tab .tab-cont .write-list .top .txt .name {
+        margin-bottom: 8px;
+    }
+
+    .mypage-buy.my-write .my-write-tab .tab-cont .write-list .top .txt .name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .mypage-buy.my-write .my-write-tab .tab-cont .write-list .write-area {
+        padding: 16px;
+    }
+
+    .mypage-buy.my-write .my-write-tab .tab-cont .write-list .write-area .error-txt {
+        font-size: 14px;
+        line-height: 24px;
+        background: url(../images/icons/warning.svg) no-repeat left top 3px / 17px;
+        padding-left: 21px;
+    }
+
+    .mypage-buy.my-write .my-write-tab .tab-cont .write-list .write-area .error-txt span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .mypage-buy.my-write .my-write-tab .tab-cont .write-list .write-area .wrt-txt {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .mypage-buy.my-write .my-write-tab .nodata {
+        font-size: 14px;
+    }
+
+    .mypage-buy.my-write .layout-paging-wrap {
+        margin-top: 24px;
+    }
+
 }
