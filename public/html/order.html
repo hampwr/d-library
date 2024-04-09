@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 기존 소스...로 추정됩니다 서버에 연결하면 지워주세요 -->
+        <link rel="stylesheet" href="../css/mall.css">
+        <!-- <link rel="stylesheet" href="../css/mall-m.css"> -->
+        <!-- D라이브러리 신규 작업 영역 (필수) -->
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css">
+        <link rel="stylesheet" href="../css/swiper.min.css">
+        <!-- slick.css / slick-theme.css는 index.html에만 필요 -->
+        <!-- <link rel="stylesheet" href="../css/slick.css" />
+        <link rel="stylesheet" href="../css/slick-theme.css" /> -->
+        <script src="../js/script.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <!-- slick.min.js는 index.html에만 필요 -->
+        <!-- <script src="../js/slick.min.js"></script> -->
+        <!-- //D라이브러리 신규 작업 영역 (필수) -->
+    </head>
+    <!-- 240409 추가 작업 body에 .visible 클래스 -->
+    <body class="visible">
+        <div class="container">
+            <!-- D라이브러리 신규 작업 영역 -->
+            <!-- 240409 추가 작업 -->
+            <div class="order-div">
+                <div class="layout-order-wrap">
+                    <div class="layout-order-contents">
+                        <div class="order-tit">주문결제</div>
+                        <div class="order-list-title">
+                            <div class="tit"><strong class="b">주문상품</strong></div>
+                        </div>
+                        <div class="order-list-all">
+                            <!-- 묶음상품 .ser-order 추가 -->
+                            <div class="order-list set-order">
+                                <!-- <div class="thumb">
+                                    <img src="../images/dummy/sub-main-thumb.jpg">
+                                </div> -->
+                                <div class="cart-info-wrap">
+                                    <div class="info-area">
+                                        <span class="pd-flag red">e매거진</span>
+                                        <p class="name row-2">어린이수학동아 15호: 분수와 소수3(2023년 15호) </p>
+                                        <!-- <span class="desc">기사 제목명 또는 회차명 회차명 1 화 기사 제목명 또는 회차명</span> -->
+                                        <div class="list-epi">
+                                            <div class="list-epi-txt">
+                                                <div class="total">총 <span class="blue">NN</span>개 기사</div>
+                                                <button class="epi-list-btn"><span>목록 </span></button>
+                                            </div>
+                                            <ul class="epi-list">
+                                                <li>
+                                                    <span class="name">사이 좋은 분수 남매의 몰래 주기 대작전</span>
+                                                    <span class="price">500원</span>
+                                                </li>
+                                                <li>
+                                                    <span class="name">분수로 뚝딱뚝딱! 브릭 나라에 오신 걸 환영합니다</span>
+                                                    <span class="price">500원</span>
+                                                </li>
+                                                <li>
+                                                    <span class="name">알아두면 쓸데 있는 분수 사전</span>
+                                                    <span class="price">500원</span>
+                                                </li>
+                                            </ul>
+                                        </div>   
+                                    </div>
+                                    <div class="price">
+                                        <span>8,000원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 일반 -->
+                            <div class="order-list">
+                                <div class="thumb">
+                                    <img src="../images/dummy/sub-main-thumb.jpg">
+                                </div>
+                                <div class="cart-info-wrap">
+                                    <div class="info-area">
+                                        <span class="pd-flag red">e매거진</span>
+                                        <p class="name row-2">어린이수학동아 15호: 분수와 소수3(2023년 15호) </p>
+                                        <!-- <span class="desc">기사 제목명 또는 회차명 회차명 1 화 기사 제목명 또는 회차명</span> -->
+                                        <div class="list-epi">
+                                            <div class="list-epi-txt">
+                                                <div class="total">총 <span class="blue">NN</span>개 기사</div>
+                                                <button class="epi-list-btn"><span>목록 </span></button>
+                                            </div>
+                                            <ul class="epi-list">
+                                                <li>
+                                                    <span class="name">사이 좋은 분수 남매의 몰래 주기 대작전</span>
+                                                    <span class="price">500원</span>
+                                                </li>
+                                                <li>
+                                                    <span class="name">분수로 뚝딱뚝딱! 브릭 나라에 오신 걸 환영합니다</span>
+                                                    <span class="price">500원</span>
+                                                </li>
+                                                <li>
+                                                    <span class="name">알아두면 쓸데 있는 분수 사전</span>
+                                                    <span class="price">500원</span>
+                                                </li>
+                                            </ul>
+                                        </div>   
+                                    </div>
+                                    <div class="price">
+                                        <span>8,000원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-div">
+                            <div class="order-list-title">
+                                <div class="tit"><strong class="b">결제수단</strong></div>
+                            </div>
+                            <div class="normal-payment">
+                                <div class="title">
+                                    <div class="new radio-wrap">
+                                        <div class="new radio-wrap type2">
+                                            <input type="radio" id="rdo1" name="radio" checked>
+                                            <label for="rdo1">일반결제</label>
+                                        </div>
+                                        <div class="tab-area">
+                                            <div class="tab-btn-wrap">
+                                                <button class="tab-btn active">
+                                                    <p class="tit">신용카드</p>
+                                                    <span>(삼성/카카오페이 포함)</span>
+                                                </button>
+                                                <button  class="tab-btn">
+                                                    <p class="tit">무통장</p>
+                                                    <span>(가상계좌)</span>
+                                                </button>
+                                                <button  class="tab-btn">
+                                                    <p class="tit">휴대폰</p>
+                                                    <span>(소액결제)</span>
+                                                </button>
+                                            </div>
+                                            <div class="tab-cont-wrap">
+                                                <!-- 신용카드 -->
+                                                <div class="tab-cont cont01">
+                                                    <span>※ 고객님의 소중한 정보는 올앳 전자결제시스템에 의해 안전하게 보호됩니다.</span>
+                                                    <span>※ 일시불일 경우 별도의 카드 수수료는 없습니다.</span>
+                                                </div>
+                                                <!-- 무통장 -->
+                                                <div class="tab-cont cont02">
+                                                    <span>※ 가상계좌를 이용해 입금하는 결제방법입니다.</span>
+                                                    <span>※ 가상계좌란? 해당 은행에 고객님만의 가상계좌를 생성하여 편리하게 입금하실 수 있도록 한 금융서비스입니다.</span>
+                                                </div>
+                                                <!-- 휴대폰 -->
+                                                <div class="tab-cont cont03">
+                                                    <span>※ 고객님의 소중한 정보는 올앳 전자결제시스템에 의해 안전하게 보호됩니다.</span>
+                                                    <span>※ 가상계좌란? 해당 은행에 고객님만의 가상계좌를 생성하여 편리하게 입금하실 수 있도록 한 금융서비스입니다.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="point-payment">
+                                <div class="new radio-wrap type2">
+                                    <input type="radio" id="rdo2" name="radio">
+                                    <label for="rdo2">DS포인트 사용</label>
+                                </div>
+                                <div class="point-wrap">
+                                    <div class="input-wrap">
+                                        <input type="text" value="0">
+                                        <i class="point-ico"><img src="../images/icons/cash2.svg"></i>
+                                    </div>
+                                    <span class="txt">보유한 포인트가 부족합니다</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-agree">
+                            <div class="order-list-title">
+                                <div class="tit"><strong class="b">주문자 동의</strong></div>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="chk1" name="checkbox">
+                                <label for="chk1">구매할 상품, 가격 정보를 확인하였으며, 구매 진행에 동의합니다. (전자상거래법 제 8조 2항)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-order-price">
+                        <div class="order-payment-all">
+                            <div class="payment-sum">
+                                <div class="tit">총 결제금액</div>
+                                <div class="price"><strong class="b verdana">500</strong><small>원</small></div>
+                                <div class="btn">
+                                    <button class="" type="button">결제하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //240409 추가 작업 -->
+            <!-- //D라이브러리 신규 작업 영역 -->
+        </div>
+    </body>
+</html>

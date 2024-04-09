@@ -45,12 +45,12 @@
     /* 서브 공통 컴포넌트 */
     /* 라디오 커스텀 */
 
-    [type="radio"]:checked + label:before,
-    [type="radio"]:not(:checked) + label:before {
+    .new [type="radio"]:checked + label:before,
+    .new [type="radio"]:not(:checked) + label:before {
         top: 0;
     }
-    [type="radio"]:checked + label:after,
-    [type="radio"]:not(:checked) + label:after {
+    .new [type="radio"]:checked + label:after,
+    .new [type="radio"]:not(:checked) + label:after {
         top: 4px;
     }
 
@@ -118,6 +118,10 @@
 
     .drop-down .options ul {
         width: 120px;
+    }
+
+    .drop-down .options ul li a {
+        padding: 6px 8px;
     }
 
     /* 타이틀 */
@@ -514,12 +518,14 @@
     .indicator .gnb-back-btn {
         position: absolute;
         top: calc(50% - 16px);
+        top: -webkit-calc(50% - 16px);
         left: 8px;
         background-image: url('../images/icons/page_back.svg');
     }
 
     .indicator .title {
         max-width: calc(100% - 160px);
+        max-width: -webkit-calc(100% - 160px);
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
@@ -531,6 +537,7 @@
     .indicator .utill {
         position: absolute;
         top: calc(50% - 16px);
+        top: -webkit-calc(50% - 16px);
         right: 8px;
         display: flex;
         align-items: center;
@@ -1127,6 +1134,7 @@
 
     .emgz.emgz-tab .view-report .report-list a {
         width: calc(50% - 14px);
+        width: -webkit-calc(50% - 14px);
     }
 
     .emgz.emgz-tab .view-report .report-list a dl {
@@ -2092,6 +2100,7 @@
     .layout-pd-cont .layout-pd-view .tab-cont > div {
         display: none;
         min-height: calc(100vh - 156px);
+        min-height: -webkit-calc(100vh - 156px);
     }
 
     .layout-pd-cont .layout-pd-view .tab-cont .sub-tit {
@@ -2443,8 +2452,8 @@
 
     .modal-wrap.review-write .write-cont .add-photo .add-wrap .img-swiper {
         position: relative;
-        width: -webkit-calc(100% - 66px);
         width: calc(100% - 66px);
+        width: -webkit-calc(100% - 66px);
     }
 
     .modal-wrap.review-write .write-cont .add-photo .add-wrap .swiper-scrollbar {
@@ -2794,7 +2803,7 @@
         top: 56px;
         left: 0;
         width: calc(100% - 32px);
-        width: -wbkit-calc(100% - 32px);
+        width: -webkit-calc(100% - 32px);
         justify-content: start;
         margin: 12px 16px;
     }
@@ -3114,7 +3123,13 @@
         background-color: #fff;
     }
 
-    /* 마이페이지 */
+    
+    /* add mypage start */
+    .ui-member-info-wrap .my-pass {
+        display: none;
+    }
+    /* add mypage end */
+
     .sub-page.mypage-buy {
         padding-bottom: 96px;
     }
@@ -3162,6 +3177,7 @@
     .sub-page.mypage-buy .mypage-wrap .cont .buy-list-view .search-wrap .btn-wrap .submit-btn {
         position: absolute;
         bottom: 0;
+        left: -webkit-calc(50% - 80px);
         left: calc(50% - 80px);
         width: 160px;
         background: url('../images/icons/icon-size.svg') no-repeat left 50px center / 18px #424242;
@@ -3254,11 +3270,15 @@
         margin: 6px 0 12px;
     }
 
-    .sub-page.mypage-buy .mypage-wrap .cont .buy-list-view .buy-list-table .txt .list-epi {
+    .list-epi {
         margin: 6px 0 12px;
     }
 
-    .sub-page.mypage-buy .mypage-wrap .cont .buy-list-view .buy-list-table .txt .list-epi .epi-list li .price {
+    .list-epi .epi-list li .name {
+        font-size: 12px;
+    }
+
+    .list-epi .epi-list li .price {
         min-width: 60px;
         padding-left: 0;
         text-align: right;
@@ -3345,8 +3365,8 @@
     }
 
     .sub-page.mypage-buy .mypage-wrap .cont .buy-list-view .buy-list-col-table .refund-account td .account{
-        width: calc(100% - 94px);
         width: -webkit-calc(100% - 94px);
+        width: calc(100% - 94px);
     }
 
     .sub-page.mypage-buy .mypage-wrap .cont .buy-list-view .buy-list-col-table .refund-account td .name input,
@@ -3457,6 +3477,7 @@
     } 
 
     .mypage-buy.bookshelf .rental-list .com-list-star li {
+        width: -webkit-calc(50% - 14px);
         width: calc(50% - 14px);
     }
 
@@ -3640,4 +3661,474 @@
         margin-top: 24px;
     }
 
+    /* 마이페이지 요금제안내 */
+    .mypage-buy.payplan .payplan-wrap {
+        margin: 72px 16px 0;
+    }
+
+    .mypage-buy .payplan-tit {
+        flex-direction: column;
+        align-items: start;
+        gap: 16px 0;
+    }
+
+    .mypage-buy .payplan-tit .tit {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .mypage-buy .payplan-tit .desc {
+        font-size: 14px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .plan-register {
+        margin-bottom: 40px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .plan-register .register-input {
+        gap: 0 6px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .plan-register .register-input .input-wrap input {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 12px 16px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .plan-register .register-input .register-btn {
+        width: auto;
+        min-width: auto;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 11.5px 16px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 10px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select .item {
+        width: -webkit-calc(50% - 5px);
+        width: calc(50% - 5px);
+        height: 100%;
+        border-radius: 12px;
+        padding: 16px 12px 47.5px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select .item .new {
+        margin-bottom: 10px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select .item .period {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select .item .price {
+        gap: 0 4px;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select .item .won {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select .item .sale {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select .item .benefit {
+        max-height: 30px;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 8px 12px;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .free-plan .plan-select .item .teacher-flag {
+        font-size: 11px;
+        line-height: 13px;
+        border-radius: 0px 0px 0px 12px;
+        padding: 4px 10px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .free-plan .total-price-wrap .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .free-plan .total-price-wrap .top .desc {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .free-plan .total-price-wrap .input-wrap {
+        padding: 16px 0;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .free-plan .total-price-wrap .input-wrap label {
+        font-size: 12px;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .free-plan .total-price-wrap .paying-btn-wrap .paying-btn {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 18.5px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-info-tit {
+        font-size: 14px;
+        margin: 16px 0;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-txt p {
+        font-size: 12px;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-txt span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-table {
+        margin-bottom: 0;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-table table tr th,
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-table table tr td {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-table table tr th {
+        width: auto;
+        min-width: 80px;
+        padding: 16px 8px;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-table table tr td {
+        min-width: 80px;
+        padding: 8px;
+        text-align: center;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-table table tr td:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-table table tr td:nth-last-of-type(1) {
+        text-align: left;
+    }
+    
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-table table tr td .small {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .mypage-buy.payplan .payplan-wrap .refund-info .refund-end-txt span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* 마이페이지 교사인증 */
+    .mypage-buy.teacher-certi .teacher-certi-wrap {
+        margin: 72px 16px 0;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .payplan-tit {
+        gap: 10px 0;
+        margin-bottom: 40px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .payplan-tit .tit {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .tit {
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .flag {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .desc {
+        font-size: 14px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box .box-wrap {
+        gap: 0 16px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box .box-wrap .box {
+        padding: 24px 0px;
+        width: 50%;
+        height: 150px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box .box-wrap .box {
+        gap: 8px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box .box-wrap .box .flag {
+        font-size: 13px;
+    }
+    
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box .box-wrap .box .grade {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box .box-wrap .box .won {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box .desc {
+        font-size: 12px;
+        line-height: 160%;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box.type2 .box-wrap {
+        flex-direction: column;
+        gap: 16px 0;
+        padding-bottom: 0;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box.type2 .box-wrap .box {
+        padding: 32px 24px;
+        width: 100%;
+        height: auto;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box.type2 .box-wrap .box .tit {
+        
+        font-size: 17px;
+    }
+    
+    .mypage-buy.teacher-certi .teacher-certi-wrap .benefit-list .item .compare-box.type2 .box-wrap .box .desc {
+        font-size: 14px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .btn-wrap .teacher-btn {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 16px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table table tr th {
+        width: 80px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 140%;
+        padding: 14px 10px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table table tr td {
+        font-size: 13px;
+        line-height: 140%;
+        padding: 12px 10px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table .drop-down a {
+        font-size: 13px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table tr.school input,
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table .drop-down,
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table .drop-down .selected a {
+        width: 100%;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table tr.school-addr .find-addr-btn {
+        width: auto;
+        min-width: 80px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 10px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table .drop-down .options ul {
+        width: -webkit-fill-available;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table tr.school-phone .drop-down .selected a,
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table tr.school-phone .drop-down .options ul {
+        width: 68px;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table .drop-down {
+        width: 70%;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table tr.school-phone .input-wrap {
+        width: 100%;
+    }
+
+    .mypage-buy.teacher-certi .teacher-certi-wrap .refund-info .certi-table td .small {
+        font-size: 12px;
+    }
+
+    /* 주문/장바구니 */
+    .order-div {
+        padding: 0;
+        border: 1px solid #fff;
+    }
+
+    .order-div .layout-order-wrap {
+        flex-direction: column;
+        gap: 0;
+        margin: 72px 16px 88px;
+    }
+
+    .order-div .layout-order-contents .order-tit {
+        display: none;
+    }
+
+    .order-div .layout-order-contents .order-list-title {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+
+    .order-div .layout-order-contents .order-list-all .order-list {
+        align-items: start;
+        padding: 12px 0;
+    }
+
+    .order-div .layout-order-contents .order-list-all .order-list .thumb {
+        width: 60px;
+        min-width: 60px;
+        padding: 10px 8px;
+    }
+    
+    .order-div .layout-order-contents .order-list-all .order-list .thumb img {
+        max-width: 60px;
+        height: 60px;
+    }
+    
+    .order-div .layout-order-contents .order-list-all .order-list .cart-info-wrap {
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .order-div .layout-order-contents .order-list-all .order-list.set-order .cart-info-wrap{
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 0;
+    }
+
+    .order-div .layout-order-contents .order-list-all .list-epi {
+        margin-bottom: 0;
+    }
+    
+    .order-div .layout-order-contents .order-list-all .order-list .cart-info-wrap .info-area {
+        width: 100%;
+        padding: 0 12px;
+    }
+    
+    .order-div .layout-order-contents .order-list-all .order-list .info-area .pd-flag {
+        font-size: 11px;
+        line-height: 16px;
+        padding: 1px 10px;
+    }
+
+    .order-div .layout-order-contents .order-list-all .order-list .info-area .name:not(.epi-list .name) {
+        font-size: 14px;
+    }
+
+    .order-div .layout-order-contents .order-list-all .order-list .price:not(.epi-list .price) {
+        font-size: 14px;
+        padding: 0 12px 0;
+    }
+
+    .order-div .layout-order-contents .payment-div {
+        margin-top: 24px;
+    }
+
+    .order-div .layout-order-contents .payment-div .radio-wrap label {
+        font-size: 16px;
+    }
+
+    .order-div .layout-order-contents .payment-div .tab-area .tab-btn-wrap {
+        flex-wrap: wrap;
+        gap: 10px 8px;
+        padding: 0;
+    }
+
+    .order-div .layout-order-contents .payment-div .tab-area .tab-btn-wrap .tab-btn {
+        width: calc(50% - 4px);
+        width: -webkit-calc(50% - 4px);
+    }
+
+    .order-div .layout-order-contents .payment-div .tab-area .tab-btn-wrap .tab-btn .tit {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .order-div .layout-order-contents .payment-div .tab-area .tab-cont-wrap {
+        padding-top: 8px;
+    }
+
+    .order-div .layout-order-contents .payment-div .tab-area .tab-btn-wrap .tab-btn span {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 4px;
+    }
+
+    .order-div .layout-order-contents .payment-div .tab-area .tab-cont {
+        padding: 0;
+    }
+
+    .order-div .layout-order-contents .payment-div .point-payment .point-wrap {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .order-div .layout-order-contents .payment-div .point-payment .input-wrap {
+        width: 100%;
+    }
+
+    .order-div .layout-order-contents .payment-div .point-payment .input-wrap input {
+        width: 100%;
+    }
+
+    .layout-order-wrap .layout-order-price {
+        height: auto;
+        padding: 24px 0;
+        margin-top: 24px;
+    }
+
+    .layout-order-wrap .order-payment-all .payment-sum .tit {
+        text-align: left;
+    }
+
+    .layout-order-wrap .order-payment-all .payment-sum .price {
+        justify-content: end;
+    }
+    
+    .layout-order-wrap .order-payment-all .payment-sum .price small {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    
 }

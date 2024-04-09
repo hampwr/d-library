@@ -46,12 +46,12 @@ $(document).ready(function () {
         $(this).siblings('.two-depth').find('li:first').addClass('selected');
     });
 
-    if($('.mypage-buy').length > 0) {
-        // 마이페이지 목록 접기/펼치기
-        $(".list-epi .epi-list-btn").click(function() {
-            $(this).parent().parent().parent().find('.list-epi').toggleClass('active')
-        });
+    // 마이페이지 목록 접기/펼치기
+    $(".list-epi .epi-list-btn").click(function() {
+        $(this).parent().parent().parent().find('.list-epi').toggleClass('active')
+    });
 
+    if($('.recent-list').length > 0) {
         // 최근 본 상품 스와이퍼 초기화 함수
         function initializeRecentSwiper() {
             return new Swiper(".recent-list .slider-wrap .slider", {
@@ -81,6 +81,18 @@ $(document).ready(function () {
             recentSwiper.destroy(); // 이전 swiper 객체 파기
             recentSwiper = initializeRecentSwiper(); // 새로운 swiper 객체 생성
         });
+    }
+
+    if($('.order-div').length > 0) {
+        // 장바구니/주문 탭 영역
+        $('.order-div .tab-area .tab-cont').hide();
+        
+        $('.order-div .tab-area .tab-btn-wrap .tab-btn').click(function(){
+            $('.order-div .tab-area .tab-cont').hide();
+            $('.order-div .tab-area .tab-btn-wrap .tab-btn').removeClass('active');
+            $($('.tab-cont')[$(this).index()]).show();
+            $(this).addClass('active');
+        }).first().trigger('click');
     }
 
 
