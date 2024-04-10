@@ -4130,5 +4130,105 @@
         font-size: 22px;
         line-height: 32px;
     }
+
+    /* 마이페이지 메인 */
+    .mypage-main {
+        background-color: #fff;
+        padding: 48px 0 88px;
+    }
+
+    .mypage-main .menu-head {
+        background: #FAFAFA;
+        padding: 24px 16px;
+    }
+    
+    .mypage-main .menu-head .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    .mypage-main .menu-head .info .name {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 140%;
+        background: url('../images/icons/member.svg') no-repeat left center / 24px;
+        padding-left: 28px;
+    }
+    
+    .mypage-main .menu-head .point-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 10px;
+        width: 100%;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F7F7F7;
+        border: 1px solid #E0E0E0;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 16px;
+    }
+
+    .mypage-main .menu-head .point-info span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .mypage-main .menu-head .point-info .point {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        background: url('../images/icons/point-pk.svg') no-repeat left center / 24px;
+        padding-left: 28px;
+    }
+
+    .mypage-main .side {
+        display: block;
+        width: 100%;
+    }
+
+    .mypage-main .side .side-menu {
+        border: none;
+        border-radius: 0;
+        padding: 16px 24px;
+    }
+
+    .side .side-menu li:nth-child(n + 2) {
+        border: none;
+    }
+
+    .mypage-main .side .side-menu li a {
+        display: flex;
+        align-items: center;
+        min-height: 56px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 28px;
+        color: #212121;
+        background: url('../images/icons/slick_next.svg') no-repeat right center / 20px;
+        padding: 0;
+    }
+
+    .mypage-main .logout {
+        margin: 16px 24px 0;
+    }
+
+    .mypage-main .logout-btn {
+        display: block;
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #212121;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        border-radius: 4px;
+        padding: 6px;
+        text-align: center;
+    }
     
 }
