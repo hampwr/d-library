@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"], input[type="button"], input[type="submit"], textarea {
-    border: 1px solid #E0E0E0;
-    border-radius: 6px;
-    padding: 13px 16px;
-}
-
 html.lock,
 html.lock body {
     overflow-y: hidden;
@@ -6395,6 +6389,7 @@ img+.paid {
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: #fff;
 }
 
 .order-div .layout-order-contents {
@@ -6595,6 +6590,9 @@ img+.paid {
     font-weight: 700;
     font-size: 16px;
     color: #212121;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 13px 16px;
 }
 
 .order-div .layout-order-contents .payment-div .point-payment .point-ico {
