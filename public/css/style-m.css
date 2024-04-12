@@ -566,7 +566,7 @@
     }
 
     .emgz.main .mgz-box {
-        margin: 40px 16px 0;
+        margin: 40px 0 0;
         padding: 40px 12px 20px;
     }
 
@@ -763,8 +763,12 @@
         margin: 40px 0 0;
     }
 
+    .emgz.main .update-mgz .com-list-star {
+        gap: 0 20px;
+    }
+
     .emgz.main .update-mgz h3 {
-        margin: 0 16px 20px;
+        margin: 0 0 20px;
     }
 
     .emgz.main .update-mgz .swiper-wrapper {
@@ -850,6 +854,7 @@
 
     .emgz.emgz-tab .view-mgz .thumb-area a {
         display: block;
+        width: 100%;
     }
 
     .emgz.emgz-tab .view-mgz .thumb-area dl dt {
@@ -886,10 +891,10 @@
         width: 100%;
     }
 
-    .emgz.emgz-tab .view-mgz .thumb-area,
+    /* .emgz.emgz-tab .view-mgz .thumb-area,
     .emgz.emgz-tab .slider {
         padding: 0 16px;
-    }
+    } */
 
     .emgz.emgz-tab .slider {
         width: 100%;
@@ -913,7 +918,7 @@
         border-top:2px solid #41b5c6;
         border-bottom:1px solid #e1e1e1;
         height: 68px;
-        margin: 0 16px;
+        /* margin: 0 16px; */
     }
 
     .emgz.emgz-tab.sci .mtitle img {
@@ -1123,7 +1128,7 @@
     }
 
     .emgz.emgz-tab .view-report {
-        margin:40px 16px 0
+        margin:40px 0 0
     }
 
     .emgz.emgz-tab .view-report .report-list {
@@ -1192,7 +1197,7 @@
 
     .emgz.emgz-dtl .view-group .view {
         width: 100%;
-        padding: 0 20px 16px;
+        padding: 0 0 16px;
         border-right: none;
     }
 
@@ -1666,7 +1671,7 @@
 
     /* 서브 이북 --------------------------------------- */
     .sub-page.ebook {
-        min-width: 360px;
+        min-width: auto;
         padding: 0;
     }
 
@@ -1736,6 +1741,8 @@
 
     .sub-page.ebook.main .sec-title.has-more {
         margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .sub-page.ebook.main .com-big-thumb .thumb-info {
@@ -2795,7 +2802,7 @@
 
     .sub-page {
         max-width: none;
-        min-width: 360px;
+        min-width: auto;
     }
 
     .search-tab-wrap {
@@ -4231,4 +4238,11 @@
         text-align: center;
     }
     
+}
+
+
+@media screen and (max-width: 580px) {
+    .sub-page.ebook.main .main-layout-04 .swiper-slide {
+        max-width: 180px;
+    }
 }

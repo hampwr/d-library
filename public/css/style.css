@@ -6819,6 +6819,7 @@ img+.paid {
     line-height: 36px;
     font-weight: 700;
     color: #000;
+    margin-bottom: 0;
 }
 
 .main .main-layout .main-title.center {
@@ -7089,6 +7090,10 @@ img+.paid {
 /* main-swiper-04 */
 .main .main-swiper-04 .swiper {
     overflow: hidden;
+}
+
+.main .main-swiper-04 .swiper .swiper-wrapper {
+    padding: 0 16px;
 }
 
 /* 메인 베스트 탭 */
@@ -7438,6 +7443,10 @@ img+.paid {
         gap: 0 12px;
     }
 
+    .md-pick .com-big-thumb {
+        min-width: auto;
+    }
+
     .com-big-thumb .thumb,
     .md-pick .com-big-thumb .thumb {
         width: 200px;
@@ -7549,6 +7558,10 @@ img+.paid {
         width: 106px;
     }
 
+    .main .main-layout.sci-issue .sci-issue-list {
+        margin-top: 24px;
+    }
+
     .main .main-layout.sci-issue .sci-issue-list li .thumb {
         width: 200px;
         min-width: 200px;
@@ -7579,6 +7592,12 @@ img+.paid {
     .main .main-top-visual .slick-visual {
         margin-left: -47.5%;
     }
+
+    .main .best-div .slider-wrap .slider,
+    .main .main-swiper-04 .swiper-wrapper, {
+        padding: 0 16px;
+    }
+
 }
 
 @media screen and (max-width: 920px) {
@@ -7864,6 +7883,11 @@ img+.paid {
         width: 100%;
     }
 
+    .sub-list-has-big-swiper .flex-wrap {
+        flex-direction: row;
+        min-width: auto;
+    }
+
     .com-big-thumb .thumb-info {
         max-width: 100%;
         width: 100%;
@@ -8005,6 +8029,12 @@ img+.paid {
 @media screen and (max-width: 709px) {
     .sub-list-has-big-swiper .swiper .swiper-wrapper {
         gap: 0 7vw;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main .main-ad-banner .slick-track {
+        display: flex;
     }
 }
 
