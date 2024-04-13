@@ -269,9 +269,10 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 144.5vw;
+        height: 682px;
+        /* height: 144.5vw;
         min-height: 520px;
-        max-height: 520px;
+        max-height: 520px; */
     }
 
     .com-big-thumb .thumb {
@@ -1922,11 +1923,14 @@
         background-color: #fff;
     }
 
+    .sub-page.cartoon.dtl {
+        padding-bottom: 0;
+    }
+
     .sub-page.dtl .com-big-thumb .thumb-info {
-        width: 100%;
-        max-width: 100%;
         padding: 0 0 6px;
         text-align: left;
+        padding-bottom: 0;
     }
 
     .sub-page.dtl .com-big-thumb .thumb-info .tag {
@@ -1982,6 +1986,10 @@
         font-weight: 400;
         line-height: 21px;
         color: #757575;
+    }
+    
+    .sub-page.dtl .com-big-thumb .price {
+        justify-content: center;
     }
 
     .sub-page.dtl .com-big-thumb .price .num-price {
@@ -2123,6 +2131,10 @@
         padding: 0 16px;
     }
 
+    .layout-pd-cont .layout-pd-view .pd-intro .pd-intro-list .tit {
+        padding: 0;
+    }
+
     .layout-pd-cont .layout-pd-view .pd-intro .pd-intro-list .box {
         padding: 24px 16px;
     }
@@ -2135,6 +2147,10 @@
     /* 목차 */
     .layout-pd-cont .layout-pd-view .pd-inner-cont .sub-tit {
         padding: 24px 16px 16px;
+    }
+
+    .pd-inner-cont .toon-list .list-top {
+        padding: 0 16px 20px;
     }
 
     .layout-pd-cont .layout-pd-view .pd-inner-cont .box {
@@ -4240,7 +4256,7 @@
     
 }
 
-
+/* 240413 이 부분 누락되었어요 */
 @media screen and (max-width: 580px) {
     .sub-page.ebook.main .main-layout-04 .swiper-slide {
         max-width: 180px;
