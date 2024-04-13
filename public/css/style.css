@@ -7102,6 +7102,10 @@ img+.paid {
     padding: 0 16px;
 }
 
+.sub-page .main .main-swiper-04 .swiper .swiper-wrapper {
+    padding: 0;
+}
+
 /* 메인 베스트 탭 */
 .main .best-div 
 .main .best-div .main-title {
@@ -7189,6 +7193,12 @@ img+.paid {
     align-items: center;
     gap: 0 40px;
     width: 100%;
+}
+
+.main .main-layout.best-div .com-list-star .swiper-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
 }
 
 .main .main-layout.best-div .com-list-star.row .thumb-info {
@@ -8023,7 +8033,7 @@ img+.paid {
     .main .main-swiper-04 .com-list-star .thumb.w180 ~ .thumb-info,
     .main .main-swiper-04 .swiper li {
         min-width: 180px;
-        width: 180px;
+        width: auto;
     }
 
     .sub-list-has-big-list .swiper-slide {
@@ -8260,7 +8270,7 @@ img+.paid {
 
     .main .main-swiper-04 .com-list-star .thumb.w180, .main .main-swiper-04 .com-list-star .thumb.w180 ~ .thumb-info, .main .main-swiper-04 .swiper li {
         min-width: 120px;
-        width: 120px;
+        width: auto;
     }
 
     .com-list-star .info .name {
