@@ -1925,6 +1925,7 @@
     }
 
     .sub-page.cartoon.dtl {
+        padding-top: 0;
         padding-bottom: 0;
     }
 
@@ -1964,6 +1965,11 @@
     .sub-page.dtl .com-big-thumb .thumb-info .review {
         justify-content: start;
         margin-top: 16px;
+    }
+    
+    .sub-page.dtl .com-big-thumb .thumb-info .review .rating {
+        display: flex;
+        align-items: center;
     }
 
     .sub-page.dtl .com-big-thumb .thumb-info .sub-info .series,
@@ -2113,11 +2119,11 @@
         padding-bottom: 116px;
     }
 
-    .layout-pd-cont .layout-pd-view .tab-cont > div {
+    /* .layout-pd-cont .layout-pd-view .tab-cont > div {
         display: none;
         min-height: calc(100vh - 156px);
         min-height: -webkit-calc(100vh - 156px);
-    }
+    } */
 
     .layout-pd-cont .layout-pd-view .tab-cont .sub-tit {
         font-size: 16px;

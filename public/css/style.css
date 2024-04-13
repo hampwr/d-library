@@ -2824,7 +2824,7 @@ img+.paid {
     display: flex;
     align-items: start;
     gap: 0 120px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     max-width: 1240px;
     margin: 0 auto;
     min-width: auto;
@@ -2883,7 +2883,7 @@ img+.paid {
 .sub-page.dtl .com-big-thumb .thumb-info {
     width: 100%;
     max-width: 100%;
-    padding: 0 0 40px;
+    padding: 0;
 }
 
 .sub-page.dtl .com-big-thumb .thumb-info .tag {
@@ -7102,7 +7102,7 @@ img+.paid {
     padding: 0 16px;
 }
 
-.sub-page .main .main-swiper-04 .swiper .swiper-wrapper {
+.layout-subpage-tab-wrap .main .main-swiper-04 .swiper .swiper-wrapper {
     padding: 0;
 }
 
