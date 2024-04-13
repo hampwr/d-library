@@ -126,7 +126,7 @@
 
     /* 타이틀 */
     .sub-page {
-        min-width: 360px;
+        min-width: auto;
         padding: 32px 0 28px;
     }
 
@@ -1273,7 +1273,7 @@
 
     .sub-page.emgz.emgz-dtl {
         max-width: none;
-        min-width: 360px;
+        min-width: auto;
         padding: 0;
     }
 
@@ -1471,10 +1471,15 @@
         border-bottom: none;
     }
 
+    .emgz.emgz-dtl .reply-list .reply-txt .reply-link label {
+        min-width: 100px;
+    }
+
     .emgz.emgz-dtl .reply-list .reply-txt .reply-name {
         display: flex;
         align-items: center;
         gap: 5px 10px;
+        width: 100%;
     }
 
     .emgz.emgz-dtl .reply-list .reply-txt .reply-name input {
@@ -1482,16 +1487,14 @@
     }
 
     .emgz.emgz-dtl .reply-list .reply-txt .reply-link {
+        display: flex;
+        align-items: center;
         width: 100%;
         margin-top: 10px;
     }
 
-    .emgz.emgz-dtl .reply-list .reply-txt .reply-link a,
-    .emgz.emgz-dtl .reply-list .reply-txt .reply-link label {
-        display: none;
-    }
-
     .emgz.emgz-dtl .reply-list .reply-txt .top {
+        align-items: start;
         flex-direction: column;
         margin-top: 0;
     }
@@ -1531,23 +1534,25 @@
     }
 
     .emgz.emgz-dtl .reply-list .reply-txt .reply-cts textarea {
-        width: 100%;
-        height:94px;
-        padding:6px 4px;
-        resize: none;
+        border:1px solid #ddd;
+        width: calc(100% - 70px);
+        width: -webkit-calc(100% - 70px);
+        height:72px;
+        padding:10px;
+        resize: vertical;
     }
 
     .emgz.emgz-dtl .reply-list .reply-txt .reply-cts .reply_submit {
-        display: none;
-        width: 100px;
-        height: 40px;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 40px;
-        border: 1px solid #999;
-        background: #fff;
-        margin: 13px auto 0;
-        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:70px;
+        height:72px;
+        color:#fff;
+        font-size:16px;
+        font-weight:bold;
+        background-color:#333;
+        text-align:center;
     }
 
     .emgz.emgz-dtl .reply-view .reply_txt {
