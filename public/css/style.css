@@ -1025,7 +1025,7 @@ body .verdana {
 
 /* 유료 플래그 */
 .paid {
-    position: relative;
+    /* position: relative;
     bottom: 0;
     right: 0;
     background: #FFF;
@@ -1039,12 +1039,13 @@ body .verdana {
     font-style: normal;
     font-weight: bold;
     border-top-left-radius: 3px;
-    opacity: 0.9;
+    opacity: 0.9; */
+    display: none;
 }
 
-img+.paid {
+/* img+.paid {
     position: absolute;
-}
+} */
 
 /* 태그 */
 .tag {
@@ -1143,6 +1144,7 @@ img+.paid {
 
 /* 툴팁 */
 .tooltip-wrap {
+    display: none;
     position: relative;
     padding-bottom: 2px;
 }
@@ -1837,8 +1839,8 @@ img+.paid {
     position:relative;
     width:174px;
     height:98px;
-    background:url('../images/noimg.png') #c4c4c4 no-repeat 50% 50%;
-    background-size:50%;
+    background:url('../images/noimg.png') #c4c4c4 no-repeat 50% 50% / contain;
+    background-size: contain;
 }
 
 .emgz.emgz-tab .view-mgz li dd{ 

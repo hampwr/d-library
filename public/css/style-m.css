@@ -913,14 +913,15 @@
     }
     
     .emgz.emgz-tab .mtitle {
-        position:relative;
+        /* position:relative;
         display: flex;
         align-items: center;
         color:#41b5c6;
         border-top:2px solid #41b5c6;
         border-bottom:1px solid #e1e1e1;
-        height: 68px;
+        height: 68px; */
         /* margin: 0 16px; */
+        display: none;
     }
 
     .emgz.emgz-tab.sci .mtitle img {
@@ -1013,7 +1014,7 @@
     .emgz.emgz-tab .view-mgz .view-special li dt {
         width:100%;
         min-height: auto;
-        background:url('../images/noimg.png') #c4c4c4 no-repeat 50% 50%;
+        background:url('../images/noimg.png') #c4c4c4 no-repeat 50% 50% / contain
     }
 
     .emgz.emgz-tab .view-mgz dd{ 
@@ -1683,14 +1684,15 @@
     }
 
     .sub-page.ebook.depth .com-tab-circle {
-        justify-content: start;
+        /* justify-content: start;
         gap: 0;
         height: 28px;
         padding-bottom: 0;
-        margin: 8px 0 24px;
+        margin: 8px 0 24px; */
         overflow-x: auto;
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
+        margin-top: 12px;
     }
     .sub-page.ebook.depth .com-tab-circle:-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera*/
@@ -1700,16 +1702,18 @@
         display: none;
     }
 
-    .sub-page.ebook.depth .com-tab-circle li .two-depth {
+    /* .sub-page.ebook.depth .com-tab-circle li .two-depth {
         position: relative;
         top: auto;
         left: auto;
         transform: none;
-    }
+    } */
 
     .sub-page.ebook.depth .com-tab-circle li.selected .two-depth {
+        bottom: 5px;
         gap: 6px 10px;
-        padding: 0 16px;
+        width: 100%;
+        /* padding: 0 16px; */
     }
 
     .sub-page.ebook .drop-down-wrap .drop-down .selected a {
@@ -1720,9 +1724,9 @@
         padding: 20px 0 0;
     }
 
-    .sub-page.ebook.main .com-tab-circle li.selected .two-depth {
+    /* .sub-page.ebook.main .com-tab-circle li.selected .two-depth {
         display: none;
-    }
+    } */
 
     .sub-page.ebook.main .cont {
         padding-top: 32px;
@@ -2163,6 +2167,18 @@
 
     .pd-inner-cont .toon-list .list-top {
         padding: 0 16px 20px;
+    }
+
+    .pd-inner-cont .toon-list .list-top .all-check .check-wrap label {
+        font-size: 14px;
+    }
+
+    .pd-inner-cont .toon-list .list-top .all-check {
+        gap: 0 10px;
+    }
+
+    .pd-inner-cont .toon-list .list li {
+        padding: 15px 16px;
     }
 
     .layout-pd-cont .layout-pd-view .pd-inner-cont .box {
@@ -2738,6 +2754,19 @@
         border-radius: 4px;
     }
 
+    .pd-inner-cont .toon-list .list-top .rental-btn {
+        width: 92px;
+        height: 32px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        border-radius: 4px;
+    }
+
+    .pd-inner-cont .toon-list .list-top .MuiInputBase-root:not(.MuiInputBase-multiline) {
+        width: 110px !important;
+    }
+
     .sub-page.dtl.cartoon .pd-inner-cont .toon-list .list li {
         padding: 12px 16px;
     }
@@ -2872,7 +2901,7 @@
     }
 
     .sub-page.search-list {
-        padding-top: 154px;
+        padding-top: 32px;
         padding-bottom: 76px;
     }
 
