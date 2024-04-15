@@ -7324,7 +7324,9 @@ body .verdana {
     }
 
     .main .sec-title {
+        position: relative;
         margin: 0 32px 32px;
+        z-index: 2;
     }
 
     .main .main-layout-02 .slider-wrap .slider .swiper-slide {

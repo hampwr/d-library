@@ -2905,6 +2905,10 @@
         padding-bottom: 76px;
     }
 
+    .sub-page.search-list .sub-big-tit {
+        word-break: auto-phrase;
+    }
+
     .sub-page .com-tab.rectangle {
         margin: 0 16px;
     }

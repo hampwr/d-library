@@ -177,42 +177,33 @@ $(document).ready(function () {
             }
 
             // big 스와이퍼
-            if (ww > 768) {
-                mySwiper = new Swiper(".sub-list-has-big-swiper .slider", {
-                    slidesPerView: 'auto',
-                    // loop : true,
-                    spaceBetween: 50,
-                    navigation: {
-                        nextEl: ".sub-list-has-big-swiper .next",
-                        prevEl: ".sub-list-has-big-swiper .prev",
-                    },  
-                    breakpoints: {
-                        576: {
-                            slidesPerView: 3,  //브라우저가 768 보다 작을 때
-                            spaceBetween: 11,
-                        },
-            
-                        768: {
-                            slidesPerView: 3,  //브라우저가 768 보다 작을 때
-                            spaceBetween: 11,
-                        },
-            
-                        860: {
-                            slidesPerView: 2,  //브라우저가 920 보다 작을 때
-                            spaceBetween: 11,
-                        },
-                        920: {
-                            spaceBetween: 11,  //브라우저가 920 보다 작을 때
-                        },
-            
-                        1280: {
-                            spaceBetween: 24,  //브라우저가 1280 보다 작을 때
-                        },
-                    },  
-                });
-            } else if (ww <= 768) {
-            // swiper 호출 안함
-            }
+            mySwiper = new Swiper(".sub-list-has-big-swiper .slider", {
+                slidesPerView: 'auto',
+                loop : true,
+                spaceBetween: 50,
+                navigation: {
+                    nextEl: ".sub-list-has-big-swiper .next",
+                    prevEl: ".sub-list-has-big-swiper .prev",
+                },  
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,  //브라우저가 768 보다 작을 때
+                        spaceBetween: 11,
+                    },
+        
+                    860: {
+                        slidesPerView: 2,  //브라우저가 920 보다 작을 때
+                        spaceBetween: 11,
+                    },
+                    920: {
+                        spaceBetween: 11,  //브라우저가 920 보다 작을 때
+                    },
+        
+                    1280: {
+                        spaceBetween: 24,  //브라우저가 1280 보다 작을 때
+                    },
+                },  
+            });
 
             // 메인
             if($('.main').length > 0) {
