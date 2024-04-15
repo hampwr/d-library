@@ -1698,10 +1698,6 @@
         display: none; /* Chrome, Safari, Opera*/
     }
 
-    .sub-page.ebook.depth .com-tab-circle > li > button {
-        display: none;
-    }
-
     /* .sub-page.ebook.depth .com-tab-circle li .two-depth {
         position: relative;
         top: auto;
@@ -2771,35 +2767,42 @@
         padding: 12px 16px;
     }
 
+    .pd-inner-cont .toon-list .list li .book-info,
     .sub-page.dtl.cartoon .pd-inner-cont .toon-list .list li .book-info {
         gap: 0 8px;
     }
 
+    .pd-inner-cont .toon-list .list li .book-info .thumb,
     .sub-page.dtl.cartoon .pd-inner-cont .toon-list .list li .book-info .thumb {
         width: 54px;
         min-width: 54px;
         height: 74px;
     }
 
+    .pd-inner-cont .toon-list .list li .book-info .info,
     .sub-page.dtl.cartoon .pd-inner-cont .toon-list .list li .book-info .info {
         gap: 6px 0;
     }
 
+    .pd-inner-cont .toon-list .list li .book-info .info span,
     .sub-page.dtl.cartoon .pd-inner-cont .toon-list .list li .book-info .info span {
         font-size: 13px;
         line-height: 16px;
     }
 
+    .pd-inner-cont .toon-list .list li .book-info .info .date,
     .sub-page.dtl.cartoon .pd-inner-cont .toon-list .list li .book-info .info .date {
         font-size: 12px;
         line-height: 14px;
     }
 
+    .pd-inner-cont .toon-list .list li .book-info .info .pric,
     .sub-page.dtl.cartoon .pd-inner-cont .toon-list .list li .book-info .info .price {
         font-size: 12px;
         line-height: 14px;
     }
 
+    .pd-inner-cont .toon-list .list li .btn-wrap button,
     .sub-page.dtl.cartoon .pd-inner-cont .toon-list .list li .btn-wrap button {
         width: 63px;
         height: 48px;
@@ -2809,10 +2812,12 @@
         border-radius: 4px;
     }
 
+    .pd-inner-cont .more-btn button,
     .sub-page.dtl.cartoon .pd-inner-cont .more-btn button {
         height: 46px;
     }
 
+    .pd-inner-cont .more-btn button span,
     .sub-page.dtl.cartoon .pd-inner-cont .more-btn button span {
         font-size: 15px;
         line-height: 20px;
