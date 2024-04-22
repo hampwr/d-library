@@ -1086,7 +1086,7 @@ body .verdana {
 
 .com-data-table .data-tit,
 .com-data-table .data-cont {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 19px;
   color: #616161;
@@ -3283,13 +3283,14 @@ body .verdana {
   align-items: normal;
   gap: 0 60px;
   width: 100%;
+  min-width: 400px;
   max-width: 1240px;
   margin: 0 auto;
 }
 
 .layout-pd-cont .layout-pd-view {
   width: 100%;
-  min-width: 0;
+  min-width: 400px;
   max-width: 880px;
 }
 
@@ -3362,9 +3363,9 @@ body .verdana {
 }
 
 /* 탭 내부 */
-.layout-pd-cont .layout-pd-view .tab-cont > div {
+/* .layout-pd-cont .layout-pd-view .tab-cont > div {
   display: none;
-}
+} */
 
 .layout-pd-cont .layout-pd-view .tab-cont .sub-tit {
   font-size: 22px;
@@ -7358,7 +7359,7 @@ body .verdana {
 
 .order-div .layout-order-contents .order-list-all .order-list {
   display: flex;
-  align-items: center;
+  align-items: start;
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -7366,7 +7367,7 @@ body .verdana {
 .order-div .layout-order-contents .order-list-all .order-list .thumb {
   width: 80px;
   min-width: 80px;
-  padding: 0 8px;
+  padding: 10px 8px;
   text-align: center;
 }
 
@@ -8882,6 +8883,10 @@ body .verdana {
     background: none;
     text-align: center;
     margin-top: 16px;
+  }
+
+  .main .main-layout-02 .swiper-wrapper {
+    height: 18rem;
   }
 
   .main .main-layout-02 .thumb-dimed .btn.solid {

@@ -4883,6 +4883,13 @@
     width: 100%;
   }
 
+    .order-div
+    .layout-order-contents
+    .payment-div
+    .normal-payment{
+    padding : 20px 0;
+  }
+
   .layout-order-wrap .layout-order-price {
     height: auto;
     padding: 24px 0;
